@@ -11,10 +11,25 @@ namespace FontoyXamarin
 	{
 		public MainPage()
 		{
-			InitializeComponent();
-		}
+			
 
-        private void OnButtonClicked(EventArgs e)
+            Title = "Todo";
+
+            var toolbarItem = new ToolbarItem
+            {
+                Text = "+",
+                Icon = Device.RuntimePlatform == Device.iOS ? null : "plus.png"
+            };
+            toolbarItem.Clicked += async (sender, e) =>
+            {
+                
+            };
+            ToolbarItems.Add(toolbarItem);
+
+            InitializeComponent();
+        }
+
+        private void OnItemAdded(EventArgs e)
         {
             Console.WriteLine("clicked");
         }

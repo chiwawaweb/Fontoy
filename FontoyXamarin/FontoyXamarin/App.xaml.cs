@@ -9,9 +9,19 @@ namespace FontoyXamarin
 	{
 		public App ()
 		{
-			InitializeComponent();
+            Resources = new ResourceDictionary();
+            Resources.Add("primaryGreen", Color.FromHex("91CA47"));
+            Resources.Add("primaryDarkGreen", Color.FromHex("6FA22E"));
 
-			MainPage = new MainPage();
+            var nav = new NavigationPage(new MainPage());
+            nav.BarBackgroundColor = (Color)App.Current.Resources["primaryGreen"];
+            nav.BarTextColor = Color.White;
+
+            MainPage = nav;
+
+            //InitializeComponent();
+
+			//MainPage = new MainPage();
 		}
 
 		protected override void OnStart ()

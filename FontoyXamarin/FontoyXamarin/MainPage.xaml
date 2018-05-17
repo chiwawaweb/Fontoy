@@ -3,12 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:FontoyXamarin"
              x:Class="FontoyXamarin.MainPage">
-
-    <Grid VerticalOptions="FillAndExpand"
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="+" Clicked="OnItemAdded">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="Android" Value="plus.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <Grid VerticalOptions="Fill"
           Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="0.5*" />
             <RowDefinition Height="1.5*" />
+            <RowDefinition Height="*" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
