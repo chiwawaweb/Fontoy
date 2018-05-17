@@ -13,5 +13,10 @@ namespace FontoyXamarin
 		{
 			InitializeComponent();
 		}
+
+        private void OnButtonClicked(EventArgs e)
+        {
+            Console.WriteLine("clicked");
+        }
 	}
 }
