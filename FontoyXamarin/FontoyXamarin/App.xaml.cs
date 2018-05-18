@@ -10,11 +10,11 @@ namespace FontoyXamarin
 		public App ()
 		{
             Resources = new ResourceDictionary();
-            Resources.Add("primaryGreen", Color.FromHex("91CA47"));
+            Resources.Add("primaryBlue", Color.FromHex("3769BA"));
             Resources.Add("primaryDarkGreen", Color.FromHex("6FA22E"));
 
             var nav = new NavigationPage(new MainPage());
-            nav.BarBackgroundColor = (Color)App.Current.Resources["primaryGreen"];
+            nav.BarBackgroundColor = (Color)App.Current.Resources["primaryBlue"];
             nav.BarTextColor = Color.White;
 
             MainPage = nav;

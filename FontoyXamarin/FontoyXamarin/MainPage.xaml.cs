@@ -9,29 +9,42 @@ namespace FontoyXamarin
 {
 	public partial class MainPage : ContentPage
 	{
-		public MainPage()
-		{
-			
+        public MainPage()
+        {
+            Title = "Accueil";
 
-            Title = "Todo";
 
-            var toolbarItem = new ToolbarItem
+            /*var toolbarItem = new ToolbarItem
             {
-                Text = "+",
+                Text = "...",
                 Icon = Device.RuntimePlatform == Device.iOS ? null : "plus.png"
             };
             toolbarItem.Clicked += async (sender, e) =>
             {
-                
+
             };
             ToolbarItems.Add(toolbarItem);
+            */
+
+            /*
+            myLabel = new Label
+            {
+                Margin = new Thickness(20),
+                //FontSize = 25,
+                //FontAttributes = FontAttributes.Bold,
+                Text = "Je suis un label rouge"
+            };
+
+            Content = myLabel;
+            */
+          
 
             InitializeComponent();
         }
 
-        private void OnItemAdded(EventArgs e)
+        private void OnMenuClic(EventArgs e)
         {
-            Console.WriteLine("clicked");
+            Console.WriteLine("Menu cliqué ! \n");
         }
 	}
 }

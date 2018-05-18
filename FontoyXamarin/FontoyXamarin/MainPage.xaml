@@ -2,24 +2,25 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:FontoyXamarin"
+             BackgroundColor="AliceBlue"
              x:Class="FontoyXamarin.MainPage">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="+" Clicked="OnItemAdded">
+        <ToolbarItem Text="Menu" Clicked="OnMenuClic">
             <ToolbarItem.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
-                    <On Platform="Android" Value="plus.png" />
+                    <On Platform="Android" Value="baseline_menu_white_48" />
                 </OnPlatform>
             </ToolbarItem.Icon>
         </ToolbarItem>
     </ContentPage.ToolbarItems>
+
     <Grid VerticalOptions="Fill"
           Margin="10">
         <Grid.RowDefinitions>
-            <RowDefinition Height="0.5*" />
-            <RowDefinition Height="1.5*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -28,64 +29,88 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <Label Text="Grid"
-               Grid.Column="0"
-               Grid.ColumnSpan="3"
-               Grid.Row="0"
-               FontSize="50"
-               FontAttributes="Bold"
+        <!-- Rangée 1 -->
+        <Image Source="iconActu"
                HorizontalOptions="Center"
-               BackgroundColor="Red"/>
+               VerticalOptions="CenterAndExpand" 
+               Grid.Row="0" 
+               Grid.Column="0" />
 
-        <Label Text="Autosized cell"
-               Grid.Column="0"
+        <Image Source="iconActu"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" 
+               Grid.Row="0"
+               Grid.Column="1" />
+
+        <Image Source="iconActu"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" 
+               Grid.Row="0"
+               Grid.Column="2" />
+        
+        <!-- Rangée 2 -->
+        <Image Source="iconActu"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" 
+               Grid.Row="1" 
+               Grid.Column="0" />
+
+        <Image Source="iconActu"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" 
                Grid.Row="1"
-               TextColor="White"
-               BackgroundColor="Blue" />
+               Grid.Column="1" />
 
-        <BoxView Color="Silver"
-                 Grid.Column="1"
-                 Grid.Row="1"
-                 HeightRequest="0" />
+        <Image Source="iconActu"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" 
+               Grid.Row="1"
+               Grid.Column="2" />
+        
+        <!-- Rangée 3 -->
+        <Image Source="iconActu"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" 
+               Grid.Row="2" 
+               Grid.Column="0" />
 
-        <BoxView Color="Teal"
-                 Grid.Column="0"
-                 Grid.Row="2" />
-
-        <Label Text="Leftover space"
-               Grid.Column="1"
+        <Image Source="iconActu"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" 
                Grid.Row="2"
-               TextColor="Purple"
-               BackgroundColor="Aqua"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" />
+               Grid.Column="1" />
 
-        <Label Text="Span two rows (or more if you want)"
-               Grid.Column="2"
-               Grid.Row="1"
-               Grid.RowSpan="2"
-               TextColor="Yellow"
-               BackgroundColor="Navy"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" />
+        <Image Source="iconActu"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" 
+               Grid.Row="2"
+               Grid.Column="2" />
 
-        <Label Text="Span 2 columns"
-               Grid.Column="0"
-               Grid.ColumnSpan="2"
+        <!-- Rangée 4 -->
+        <Image Source="iconActu"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" 
+               Grid.Row="3" 
+               Grid.Column="0" />
+
+        <Image Source="iconActu"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" 
                Grid.Row="3"
-               TextColor="Blue"
-               BackgroundColor="Yellow"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" />
+               Grid.Column="1" />
 
-        <Label Text="Fixed 100x100"
-               Grid.Column="2"
+        <Image Source="iconFacebook"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" 
                Grid.Row="3"
-               TextColor="Aqua"
-               BackgroundColor="Red"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" />
+               Grid.Column="2" />
+
+
+
+
+
+
+
+
     </Grid>
-
-
 </ContentPage>
