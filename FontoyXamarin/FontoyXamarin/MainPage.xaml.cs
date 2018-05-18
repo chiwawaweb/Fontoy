@@ -54,5 +54,10 @@ namespace FontoyXamarin
                 BindingContext = new ActualitePage()
             });
         }
+
+        async void OnFacebookClic(object sender, EventArgs e)
+        {
+
+        }
     }
 }

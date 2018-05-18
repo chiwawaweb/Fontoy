@@ -110,7 +110,13 @@
                HorizontalOptions="Center"
                VerticalOptions="CenterAndExpand" 
                Grid.Row="3"
-               Grid.Column="2" />
+               Grid.Column="2">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="OnFacebookClic"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
 
 
 
