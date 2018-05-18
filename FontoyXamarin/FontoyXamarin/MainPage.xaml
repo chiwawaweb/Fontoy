@@ -34,7 +34,14 @@
                HorizontalOptions="Center"
                VerticalOptions="CenterAndExpand" 
                Grid.Row="0" 
-               Grid.Column="0" />
+               Grid.Column="0" >
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                Tapped="OnActualiteClic"
+                NumberOfTapsRequired="1" />
+            </Image.GestureRecognizers>
+        </Image>
+               
 
         <Image Source="iconActu"
                HorizontalOptions="Center"

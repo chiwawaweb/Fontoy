@@ -46,5 +46,13 @@ namespace FontoyXamarin
         {
             Console.WriteLine("Menu cliqué ! \n");
         }
-	}
+
+        async void OnActualiteClic(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ActualitePage
+            {
+                BindingContext = new ActualitePage()
+            });
+        }
+    }
 }
