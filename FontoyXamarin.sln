@@ -7,7 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FontoyXamarin.Android", "Fo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FontoyXamarin.iOS", "FontoyXamarin\FontoyXamarin.iOS\FontoyXamarin.iOS.csproj", "{FBF73FE3-141C-4CAB-9457-0FB463E85F95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FontoyXamarin", "FontoyXamarin\FontoyXamarin\FontoyXamarin.csproj", "{E04E1DA9-34C6-4527-B889-107F0122217B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FontoyXamarin", "FontoyXamarin\FontoyXamarin\FontoyXamarin.csproj", "{E04E1DA9-34C6-4527-B889-107F0122217B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{43EBBA71-C741-4CC9-97D6-B153E44DA482}"
+	ProjectSection(SolutionItems) = preProject
+		projet.md = projet.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
