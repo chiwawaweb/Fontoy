@@ -13,6 +13,11 @@
             </ToolbarItem.Icon>
         </ToolbarItem>
     </ContentPage.ToolbarItems>
+    <StackLayout>
+        <Image Source="iconActu"
+               HorizontalOptions="Center" />
+
+    </StackLayout>
     <ContentPage.Content>
     <ScrollView Orientation="Vertical">
     <Grid Margin="10">
@@ -43,7 +48,7 @@
         </Image>
                
 
-        <Image Source="iconActu"
+        <Image Source="iconAgenda"
                HorizontalOptions="Center"
                
                Grid.Row="0"
