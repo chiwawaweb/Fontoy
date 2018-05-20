@@ -13,14 +13,14 @@
             </ToolbarItem.Icon>
         </ToolbarItem>
     </ContentPage.ToolbarItems>
-
-    <Grid VerticalOptions="Fill"
-          Margin="10">
+    <ContentPage.Content>
+    <ScrollView Orientation="Vertical">
+    <Grid Margin="10">
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*" />
-            <RowDefinition Height="1*" />
-            <RowDefinition Height="1*" />
-            <RowDefinition Height="1*" />
+            <RowDefinition Height="120" />
+            <RowDefinition Height="120" />
+            <RowDefinition Height="120" />
+            <RowDefinition Height="120" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -32,7 +32,7 @@
         <!-- Rangée 1 -->
         <Image Source="iconActu"
                HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" 
+                
                Grid.Row="0" 
                Grid.Column="0" >
             <Image.GestureRecognizers>
@@ -45,70 +45,70 @@
 
         <Image Source="iconActu"
                HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" 
+               
                Grid.Row="0"
                Grid.Column="1" />
 
         <Image Source="iconActu"
                HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" 
+               
                Grid.Row="0"
                Grid.Column="2" />
         
         <!-- Rangée 2 -->
         <Image Source="iconActu"
                HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" 
+               
                Grid.Row="1" 
                Grid.Column="0" />
 
         <Image Source="iconActu"
                HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" 
+               
                Grid.Row="1"
                Grid.Column="1" />
 
         <Image Source="iconActu"
                HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" 
+               
                Grid.Row="1"
                Grid.Column="2" />
         
         <!-- Rangée 3 -->
         <Image Source="iconActu"
                HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" 
+               
                Grid.Row="2" 
                Grid.Column="0" />
 
         <Image Source="iconActu"
                HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" 
+               
                Grid.Row="2"
                Grid.Column="1" />
 
         <Image Source="iconActu"
                HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" 
+               
                Grid.Row="2"
                Grid.Column="2" />
 
         <!-- Rangée 4 -->
         <Image Source="iconActu"
                HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" 
+               
                Grid.Row="3" 
                Grid.Column="0" />
 
         <Image Source="iconActu"
                HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" 
+               
                Grid.Row="3"
                Grid.Column="1" />
 
         <Image Source="iconFacebook"
                HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" 
+               
                Grid.Row="3"
                Grid.Column="2">
             <Image.GestureRecognizers>
@@ -119,11 +119,7 @@
         </Image>
 
 
-
-
-
-
-
-
     </Grid>
+    </ScrollView>
+    </ContentPage.Content>
 </ContentPage>
