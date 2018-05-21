@@ -57,9 +57,9 @@
                         Grid.Row="0"
                         Grid.Column="0"
                         HasShadow="True"
-                        OutlineColor="#FF3366"
+                        OutlineColor="#0099cc"
+                        BackgroundColor="#0099cc"
                         CornerRadius="5"
-                        BackgroundColor="#FF3366"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
                         Padding="0"
@@ -122,19 +122,19 @@
                     </Frame>
 
                     <!-- Rangée 1 -->
-                    <!--  -->
+                    <!-- METEO -->
                     <Frame 
                         Grid.Row="1"
                         Grid.Column="0"
                         HasShadow="True"
                         CornerRadius="5"
-                        OutlineColor="#0099ff"
-                        BackgroundColor="#0099ff"
+                        OutlineColor="#00e600"
+                        BackgroundColor="#00e600"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
                         Padding="0"
                         Margin="0">
-                        <Image Source="iconAgenda"
+                        <Image Source="iconMeteo"
                             HorizontalOptions="Center" >
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer
@@ -144,20 +144,41 @@
                         </Image>
                     </Frame>
 
-                    <!--  -->
+                    <!-- VOS ELUS -->
                     <Frame 
                         Grid.Row="1"
                         Grid.Column="1"
-                        Grid.ColumnSpan="2"
                         HasShadow="True"
                         CornerRadius="5"
-                        OutlineColor="#0099ff"
-                        BackgroundColor="#0099ff"
+                        OutlineColor="#ff99cc"
+                        BackgroundColor="#ff99cc"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
                         Padding="0"
                         Margin="0">
-                        <Image Source="iconAgenda"
+                        <Image Source="iconElus"
+                            HorizontalOptions="Center" >
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                Tapped="OnActualiteClic"
+                                NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
+
+                    <!-- DEFIBRILATEUR -->
+                    <Frame 
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        HasShadow="True"
+                        CornerRadius="5"
+                        OutlineColor="#7B0099"
+                        BackgroundColor="#7B0099"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        Padding="0"
+                        Margin="0">
+                        <Image Source="iconDEA"
                             HorizontalOptions="Center" >
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer
@@ -168,19 +189,19 @@
                     </Frame>
 
                     <!-- Rangée 2 -->
-                    <!--  -->
+                    <!-- URGENCES -->
                     <Frame 
                         Grid.Row="2"
                         Grid.Column="0"
                         HasShadow="True"
                         CornerRadius="5"
-                        OutlineColor="#0099ff"
-                        BackgroundColor="#0099ff"
+                        OutlineColor="#ff6600"
+                        BackgroundColor="#ff6600"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
                         Padding="0"
                         Margin="0">
-                        <Image Source="iconAgenda"
+                        <Image Source="iconUrgences"
                             HorizontalOptions="Center" >
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer
@@ -190,7 +211,7 @@
                         </Image>
                     </Frame>
 
-                    <!--  -->
+                    <!-- SIGNALEMENT -->
                     <Frame 
                         Grid.Row="2"
                         Grid.Column="1"
@@ -202,7 +223,7 @@
                         VerticalOptions="FillAndExpand"
                         Padding="0"
                         Margin="0">
-                        <Image Source="iconAgenda"
+                        <Image Source="iconSignalement"
                             HorizontalOptions="Center" >
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer
@@ -218,8 +239,8 @@
                         Grid.Column="2"
                         HasShadow="True"
                         CornerRadius="5"
-                        OutlineColor="#0099ff"
-                        BackgroundColor="#0099ff"
+                        OutlineColor="#ccccff"
+                        BackgroundColor="#ccccff"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
                         Padding="0"
@@ -241,8 +262,8 @@
                         Grid.Column="0"
                         HasShadow="True"
                         CornerRadius="5"
-                        OutlineColor="#0099ff"
-                        BackgroundColor="#0099ff"
+                        OutlineColor="#cc99ff"
+                        BackgroundColor="#cc99ff"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
                         Padding="0"
@@ -263,8 +284,8 @@
                         Grid.Column="1"
                         HasShadow="True"
                         CornerRadius="5"
-                        OutlineColor="#0099ff"
-                        BackgroundColor="#0099ff"
+                        OutlineColor="#cc66ff"
+                        BackgroundColor="#cc66ff"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
                         Padding="0"
