@@ -16,119 +16,118 @@
     
     <ContentPage.Content>
         <ScrollView Orientation="Vertical">
-
             <Grid Margin="0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="120" />
-                    <RowDefinition Height="120" />
-                    <RowDefinition Height="120" />
-                    <RowDefinition Height="120" />
-                    <RowDefinition Height="120" />
+                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-                <!-- Rangée 0 (illustration) -->
+                <!-- Illustration -->
                 <Image Source="bandeauAccueil"
                     HorizontalOptions="Center"
                     Grid.Row="0" 
-                    Grid.Column="0"
-                    Grid.ColumnSpan="3" >
+                    Grid.Column="0" >
                 </Image>
 
-                <!-- Rangée 1 -->
-                <Image Source="iconActu"
-                    HorizontalOptions="Center"
-                    Grid.Row="1" 
-                    Grid.Column="0" 
-                    Margin="10,-10,0,-10">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer
+                <Grid 
+                    Margin="0"
+                    Padding="10,0,10,0"
+                    Grid.Row="1"
+                    Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="120" />
+                        <RowDefinition Height="120" />
+                        <RowDefinition Height="120" />
+                        <RowDefinition Height="120" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Rangée 0 -->
+                    <Image Source="iconActu"
+                        HorizontalOptions="Center"
+                        Grid.Row="0" 
+                        Grid.Column="0" >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
                             Tapped="OnActualiteClic"
                             NumberOfTapsRequired="1" />
-                    </Image.GestureRecognizers>
-                </Image>
+                        </Image.GestureRecognizers>
+                    </Image>
 
-                <Image Source="iconAgenda"
+                    <Image Source="iconAgenda"
+                        HorizontalOptions="Center"
+                        Grid.Row="0"
+                        Grid.Column="1" />
+
+                    <Image Source="iconActu"
+                        HorizontalOptions="Center"
+                        Grid.Row="0"
+                        Grid.Column="2" />
+
+                    <!-- Rangée 1 -->
+                    <Image Source="iconActu"
+                    HorizontalOptions="Center"
+                    Grid.Row="1" 
+                    Grid.Column="0" />
+
+                    <Image Source="iconActu"
                     HorizontalOptions="Center"
                     Grid.Row="1"
-                    Grid.Column="1"
-                    Margin="5,-10,5,-10" />
+                    Grid.Column="1" />
 
-                <Image Source="iconActu"
+                    <Image Source="iconActu"
                     HorizontalOptions="Center"
                     Grid.Row="1"
-                    Grid.Column="2"
-                    Margin="0,-10,10,-10"/>
+                    Grid.Column="2" />
 
-                <!-- Rangée 2 -->
-                <Image Source="iconActu"
+                    <!-- Rangée 2 -->
+                    <Image Source="iconActu"
                     HorizontalOptions="Center"
                     Grid.Row="2" 
-                    Grid.Column="0"
-                    Margin="10,-10,0,-10" />
+                    Grid.Column="0" />
 
-                <Image Source="iconActu"
+                    <Image Source="iconActu"
                     HorizontalOptions="Center"
                     Grid.Row="2"
-                    Grid.Column="1"
-                    Margin="5,-10,5,-10" />
+                    Grid.Column="1" />
 
-                <Image Source="iconActu"
+                    <Image Source="iconActu"
                     HorizontalOptions="Center"
                     Grid.Row="2"
-                    Grid.Column="2"
-                    Margin="0,-10,10,-10" />
+                    Grid.Column="2" />
 
-                <!-- Rangée 3 -->
-                <Image Source="iconActu"
+                    <!-- Rangée 3 -->
+                    <Image Source="iconActu"
                     HorizontalOptions="Center"
                     Grid.Row="3" 
-                    Grid.Column="0"
-                    Margin="10,-10,0,-10" />
+                    Grid.Column="0" />
 
-                <Image Source="iconActu"
+                    <Image Source="iconActu"
                     HorizontalOptions="Center"
                     Grid.Row="3"
-                    Grid.Column="1"
-                    Margin="5,-10,5,-10" />
+                    Grid.Column="1" />
 
-                <Image Source="iconActu"
+                    <Image Source="iconFacebook"
                     HorizontalOptions="Center"
                     Grid.Row="3"
-                    Grid.Column="2"
-                    Margin="0,-10,10,-10" />
-
-                <!-- Rangée 4 -->
-                <Image Source="iconActu"
-                    HorizontalOptions="Center"
-                    Grid.Row="4" 
-                    Grid.Column="0"
-                    Margin="10,-10,0,10" />
-
-                <Image Source="iconActu"
-                    HorizontalOptions="Center"
-                    Grid.Row="4"
-                    Grid.Column="1"
-                    Margin="5,-10,5,10" />
-
-                <Image Source="iconFacebook"
-                    HorizontalOptions="Center"
-                    Grid.Row="4"
-                    Grid.Column="2" 
-                    Margin="0,-10,10,10" >
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer
-                            Tapped="OnFacebookClic"
-                            NumberOfTapsRequired="1" />
-                    </Image.GestureRecognizers>
-                </Image>
-                
+                    Grid.Column="2"  >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Tapped="OnFacebookClic"
+                                NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Grid>
             </Grid>
+
+
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>
