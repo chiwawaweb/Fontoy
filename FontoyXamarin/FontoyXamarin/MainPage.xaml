@@ -20,6 +20,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="120" />
                     <RowDefinition Height="*"/>
+                    <RowDefinition Height="10"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -27,9 +28,10 @@
 
                 <!-- Illustration -->
                 <Image Source="bandeauAccueil"
-                    HorizontalOptions="Center"
+                    HorizontalOptions="Fill"
                     Grid.Row="0" 
-                    Grid.Column="0" >
+                    Grid.Column="0"
+                    Aspect="AspectFill">
                 </Image>
 
                 <Grid 
@@ -50,84 +52,262 @@
                     </Grid.ColumnDefinitions>
 
                     <!-- Rangée 0 -->
-                    <Image Source="iconActu"
-                        HorizontalOptions="Center"
-                        Grid.Row="0" 
-                        Grid.Column="0" >
-                        <Image.GestureRecognizers>
-                            <TapGestureRecognizer
-                            Tapped="OnActualiteClic"
-                            NumberOfTapsRequired="1" />
-                        </Image.GestureRecognizers>
-                    </Image>
-
-                    <Image Source="iconAgenda"
-                        HorizontalOptions="Center"
+                    <!-- ACTUALITE -->
+                    <Frame 
                         Grid.Row="0"
-                        Grid.Column="1" />
-
-                    <Image Source="iconActu"
-                        HorizontalOptions="Center"
+                        Grid.Column="0"
+                        HasShadow="True"
+                        OutlineColor="#FF3366"
+                        CornerRadius="5"
+                        BackgroundColor="#FF3366"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        Padding="0"
+                        Margin="0">
+                        
+                        <Image Source="iconActu"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                Tapped="OnActualiteClic"
+                                NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
+                    
+                    <!-- AGENDA -->
+                    <Frame 
                         Grid.Row="0"
-                        Grid.Column="2" />
+                        Grid.Column="1"
+                        HasShadow="True"
+                        CornerRadius="5"
+                        OutlineColor="#FFCC00"
+                        BackgroundColor="#FFCC00"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        
+                        Padding="0"
+                        Margin="0">
+                        <Image Source="iconAgenda"
+                            HorizontalOptions="Center" >
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                Tapped="OnActualiteClic"
+                                NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
+                    
+                    <!-- ALERTES -->
+                    <Frame 
+                        Grid.Row="0"
+                        Grid.Column="2"
+                        HasShadow="True"
+                        CornerRadius="5"
+                        OutlineColor="#cc0000"
+                        BackgroundColor="#cc0000"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        Padding="0"
+                        Margin="0" >
+                        <Image Source="iconAlertes"
+                            HorizontalOptions="Center" >
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                Tapped="OnActualiteClic"
+                                NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
 
                     <!-- Rangée 1 -->
-                    <Image Source="iconActu"
-                    HorizontalOptions="Center"
-                    Grid.Row="1" 
-                    Grid.Column="0" />
+                    <!--  -->
+                    <Frame 
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        HasShadow="True"
+                        CornerRadius="5"
+                        OutlineColor="#0099ff"
+                        BackgroundColor="#0099ff"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        Padding="0"
+                        Margin="0">
+                        <Image Source="iconAgenda"
+                            HorizontalOptions="Center" >
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                Tapped="OnActualiteClic"
+                                NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
 
-                    <Image Source="iconActu"
-                    HorizontalOptions="Center"
-                    Grid.Row="1"
-                    Grid.Column="1" />
-
-                    <Image Source="iconActu"
-                    HorizontalOptions="Center"
-                    Grid.Row="1"
-                    Grid.Column="2" />
+                    <!--  -->
+                    <Frame 
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Grid.ColumnSpan="2"
+                        HasShadow="True"
+                        CornerRadius="5"
+                        OutlineColor="#0099ff"
+                        BackgroundColor="#0099ff"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        Padding="0"
+                        Margin="0">
+                        <Image Source="iconAgenda"
+                            HorizontalOptions="Center" >
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                Tapped="OnActualiteClic"
+                                NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
 
                     <!-- Rangée 2 -->
-                    <Image Source="iconActu"
-                    HorizontalOptions="Center"
-                    Grid.Row="2" 
-                    Grid.Column="0" />
+                    <!--  -->
+                    <Frame 
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        HasShadow="True"
+                        CornerRadius="5"
+                        OutlineColor="#0099ff"
+                        BackgroundColor="#0099ff"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        Padding="0"
+                        Margin="0">
+                        <Image Source="iconAgenda"
+                            HorizontalOptions="Center" >
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                Tapped="OnActualiteClic"
+                                NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
 
-                    <Image Source="iconActu"
-                    HorizontalOptions="Center"
-                    Grid.Row="2"
-                    Grid.Column="1" />
+                    <!--  -->
+                    <Frame 
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        HasShadow="True"
+                        CornerRadius="5"
+                        OutlineColor="#0099ff"
+                        BackgroundColor="#0099ff"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        Padding="0"
+                        Margin="0">
+                        <Image Source="iconAgenda"
+                            HorizontalOptions="Center" >
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                Tapped="OnActualiteClic"
+                                NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
 
-                    <Image Source="iconActu"
-                    HorizontalOptions="Center"
-                    Grid.Row="2"
-                    Grid.Column="2" />
+                    <!--  -->
+                    <Frame 
+                        Grid.Row="2"
+                        Grid.Column="2"
+                        HasShadow="True"
+                        CornerRadius="5"
+                        OutlineColor="#0099ff"
+                        BackgroundColor="#0099ff"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        Padding="0"
+                        Margin="0">
+                        <Image Source="iconAgenda"
+                            HorizontalOptions="Center" >
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                Tapped="OnActualiteClic"
+                                NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
 
                     <!-- Rangée 3 -->
-                    <Image Source="iconActu"
-                    HorizontalOptions="Center"
-                    Grid.Row="3" 
-                    Grid.Column="0" />
+                    <!--  -->
+                    <Frame 
+                        Grid.Row="3"
+                        Grid.Column="0"
+                        HasShadow="True"
+                        CornerRadius="5"
+                        OutlineColor="#0099ff"
+                        BackgroundColor="#0099ff"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        Padding="0"
+                        Margin="0">
+                        <Image Source="iconAgenda"
+                            HorizontalOptions="Center" >
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                Tapped="OnActualiteClic"
+                                NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
 
-                    <Image Source="iconActu"
-                    HorizontalOptions="Center"
-                    Grid.Row="3"
-                    Grid.Column="1" />
+                    <!--  -->
+                    <Frame 
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        HasShadow="True"
+                        CornerRadius="5"
+                        OutlineColor="#0099ff"
+                        BackgroundColor="#0099ff"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        Padding="0"
+                        Margin="0">
+                        <Image Source="iconAgenda"
+                            HorizontalOptions="Center" >
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                Tapped="OnActualiteClic"
+                                NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
 
-                    <Image Source="iconFacebook"
-                    HorizontalOptions="Center"
-                    Grid.Row="3"
-                    Grid.Column="2"  >
-                        <Image.GestureRecognizers>
-                            <TapGestureRecognizer
+                    <!--  -->
+                    <Frame 
+                        Grid.Row="3"
+                        Grid.Column="2"
+                        HasShadow="True"
+                        CornerRadius="5"
+                        OutlineColor="#3b5998"
+                        BackgroundColor="#3b5998"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        Padding="0"
+                        Margin="0">
+                        <Image Source="iconFacebook"
+                            HorizontalOptions="Center" >
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
                                 Tapped="OnFacebookClic"
                                 NumberOfTapsRequired="1" />
-                        </Image.GestureRecognizers>
-                    </Image>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
                 </Grid>
+                
+                <!-- Petit décalage en fin de page -->
+                <Frame
+                    Grid.Row="2"
+                    Grid.Column="0">
+                </Frame>
             </Grid>
-
-
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>
