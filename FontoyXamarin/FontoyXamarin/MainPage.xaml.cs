@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FontoyXamarin.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -67,7 +68,10 @@ namespace FontoyXamarin
 
         async void OnMeteoClic(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new MeteoPage
+            {
+                BindingContext = new MeteoPage()
+            });
         }
     }
 }
