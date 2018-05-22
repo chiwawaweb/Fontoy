@@ -42,7 +42,7 @@ namespace FontoyXamarin
             InitializeComponent();
         }
 
-        private void OnMenuClic(EventArgs e)
+        async void OnMenuClic(EventArgs e)
         {
             Console.WriteLine("Menu cliqué ! \n");
         }
@@ -56,6 +56,16 @@ namespace FontoyXamarin
         }
 
         async void OnFacebookClic(object sender, EventArgs e)
+        {
+
+        }
+
+        async void OnAgendaClic(object sender, EventArgs e)
+        {
+
+        }
+
+        async void OnMeteoClic(object sender, EventArgs e)
         {
 
         }

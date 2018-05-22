@@ -93,7 +93,7 @@
                             HorizontalOptions="Center" >
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer
-                                Tapped="OnActualiteClic"
+                                Tapped="OnAgendaClic"
                                 NumberOfTapsRequired="1" />
                             </Image.GestureRecognizers>
                         </Image>
@@ -138,7 +138,7 @@
                             HorizontalOptions="Center" >
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer
-                                Tapped="OnActualiteClic"
+                                Tapped="OnMeteoClic"
                                 NumberOfTapsRequired="1" />
                             </Image.GestureRecognizers>
                         </Image>
