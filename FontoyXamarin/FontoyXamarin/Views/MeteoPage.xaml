@@ -8,6 +8,9 @@
 
             <Label Text="Température :" />
             <Label x:Name="Temp" />
+
+            <Label Text="Date / Heure courante :" />
+            <Label x:Name="HeureCourante" />
         </StackLayout>
         
         

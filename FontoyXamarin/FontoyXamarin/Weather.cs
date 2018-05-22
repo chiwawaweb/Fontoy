@@ -15,5 +15,7 @@ namespace FontoyXamarin
         public string Visibility { get; set; } = " ";
         public string Sunrise { get; set; } = " ";
         public string Sunset { get; set; } = " ";
+
+        
     }
 }
