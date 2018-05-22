@@ -9,7 +9,7 @@
             <Label Text="Température :" />
             <Label x:Name="Temp" />
 
-            <Label Text="Date / Heure courante :" />
+            <Label Text="Créneau actuel :" />
             <Label x:Name="HeureCourante" />
         </StackLayout>
         
