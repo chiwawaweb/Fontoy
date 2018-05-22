@@ -28,14 +28,13 @@ namespace FontoyXamarin
 
             dynamic results = await DataService.getDataFromService(queryString).ConfigureAwait(false);
 
-            Console.WriteLine("\n\n*************************");
-            Console.WriteLine(results["request_state"]);
-            Console.WriteLine("\n\n =========================");
+           
 
             if (results["request_state"] != null)
             {
+                
                 Weather weather = new Weather();
-                weather.Temperature = (string)results["2018-05-22 11:00:00"]["temperature"]["sol"] + " °C";
+                weather.Temperature = (string)results[CalculCreneau(DateTime.Now.ToShortDateString(), DateTime.Now.ToLongTimeString())]["temperature"]["sol"] + " °C";
                 /*weather.Title = (string)results["name"];
                 weather.Temperature = (string)results["main"]["temp"] + " °C";
                 weather.Wind = (string)results["wind"]["speed"] + " mph";
@@ -53,6 +52,50 @@ namespace FontoyXamarin
             else
             {
                 return null;
+            }
+        }
+
+        private static string CalculCreneau(string date, string heure)
+        {
+            if (Convert.ToDateTime(heure) >= DateTime.Parse("02:00:00") && Convert.ToDateTime(heure) <= DateTime.Parse("04:59:59"))
+            {
+                return Convert.ToDateTime(date).ToString("yyyy-MM-dd") + " 02:00:00";
+            }
+            else if (Convert.ToDateTime(heure) >= DateTime.Parse("05:00:00") && Convert.ToDateTime(heure) <= DateTime.Parse("07:59:59"))
+            {
+                return Convert.ToDateTime(date).ToString("yyyy-MM-dd") + " 05:00:00";
+            }
+            else if (Convert.ToDateTime(heure) >= DateTime.Parse("08:00:00") && Convert.ToDateTime(heure) <= DateTime.Parse("10:59:59"))
+            {
+                return Convert.ToDateTime(date).ToString("yyyy-MM-dd") + " 08:00:00";
+            }
+            else if (Convert.ToDateTime(heure) >= DateTime.Parse("11:00:00") && Convert.ToDateTime(heure) <= DateTime.Parse("13:59:59"))
+            {
+                return Convert.ToDateTime(date).ToString("yyyy-MM-dd") + " 11:00:00";
+            }
+            else if (Convert.ToDateTime(heure) >= DateTime.Parse("14:00:00") && Convert.ToDateTime(heure) <= DateTime.Parse("16:59:59"))
+            {
+                return Convert.ToDateTime(date).ToString("yyyy-MM-dd") + " 14:00:00";
+            }
+            else if (Convert.ToDateTime(heure) >= DateTime.Parse("17:00:00") && Convert.ToDateTime(heure) <= DateTime.Parse("19:59:59"))
+            {
+                return Convert.ToDateTime(date).ToString("yyyy-MM-dd") + " 17:00:00";
+            }
+            else if (Convert.ToDateTime(heure) >= DateTime.Parse("20:00:00") && Convert.ToDateTime(heure) <= DateTime.Parse("22:59:59"))
+            {
+                return Convert.ToDateTime(date).ToString("yyyy-MM-dd") + " 20:00:00";
+            }
+            else if (Convert.ToDateTime(heure) >= DateTime.Parse("23:00:00") && Convert.ToDateTime(heure) <= DateTime.Parse("23:59:59"))
+            {
+                return Convert.ToDateTime(date).ToString("yyyy-MM-dd") + " 23:00:00";
+            }
+            else if (Convert.ToDateTime(heure) >= DateTime.Parse("00:00:00") && Convert.ToDateTime(heure) <= DateTime.Parse("01:59:59"))
+            {
+                return Convert.ToDateTime(date).AddDays(-1).ToString("yyyy-MM-dd") + " 23:00:00";
+            }
+            else
+            {
+                return string.Empty;
             }
         }
     }
