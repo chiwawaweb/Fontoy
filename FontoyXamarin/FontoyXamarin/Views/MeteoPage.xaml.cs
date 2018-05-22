@@ -15,6 +15,17 @@ namespace FontoyXamarin.Views
 		public MeteoPage ()
 		{
 			InitializeComponent ();
-		}
+
+            ViewMeteo();
+        }
+
+        private async void ViewMeteo()
+        {
+            Weather weather = await Core.GetWeather();
+            
+            /* Affiche la température */
+            Temp.Text = weather.Temperature;
+            
+        }
 	}
 }

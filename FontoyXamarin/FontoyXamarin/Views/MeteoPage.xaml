@@ -4,10 +4,13 @@
              x:Class="FontoyXamarin.Views.MeteoPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Météo du jour"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Météo du jour" />
+
+            <Label Text="Température :" />
+            <Label x:Name="Temp" />
         </StackLayout>
+        
+        
     </ContentPage.Content>
 </ContentPage>
     

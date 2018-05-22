@@ -7,12 +7,13 @@ namespace FontoyXamarin
 {
     public class Core
     {
-        public static async Task<Weather> GetWeather(string zipCode)
+        public static async Task<Weather> GetWeather()
         {
             //Sign up for a free API key at http://openweathermap.org/appid  
             string key = "453fcf7ce64d8bd77e4013b8c6c5f496";
+            //string queryString = "http://www.infoclimat.fr/public-api/gfs/json?_ll=49.3559,5.99638&_auth=BR9RRgR6V3UFKFptUCYHLlkxVGEOeAgvC3dXNABlVyoAa1IzAGABZ1A%2BUC1XeFdhUH0AYwkyAzMHbFIqDnxUNQVvUT0Eb1cwBWpaP1B%2FByxZd1Q1Di4ILwtpVzkAblcqAGpSNwB9AWBQOVAsV2VXYVBrAH8JKQM6B2FSNw5lVD4FblE1BG5XMQVoWidQfwc2WThUNA4yCGULaVc0ADhXNQBqUj4AawFlUD9QLFdvV2BQYwBiCTIDMgdnUjQOfFQoBR9RRgR6V3UFKFptUCYHLlk%2FVGoOZQ%3D%3D&_c=00e0a65f995e0f9afe937cba34c8c6f3";
             string queryString = "http://api.openweathermap.org/data/2.5/weather?zip="
-                + zipCode + ",us&appid=" + key + "&units=imperial";
+                + "57650" + ",fr&appid=" + key + "&units=metric";
 
             //Make sure developers running this sample replaced the API key
             if (key == "YOUR API KEY HERE")
@@ -26,7 +27,7 @@ namespace FontoyXamarin
             {
                 Weather weather = new Weather();
                 weather.Title = (string)results["name"];
-                weather.Temperature = (string)results["main"]["temp"] + " F";
+                weather.Temperature = (string)results["main"]["temp"] + " °C";
                 weather.Wind = (string)results["wind"]["speed"] + " mph";
                 weather.Humidity = (string)results["main"]["humidity"] + " %";
                 weather.Visibility = (string)results["weather"][0]["main"];
