@@ -33,7 +33,6 @@ namespace FontoyXamarin
                 double temperatureCelciusNow = temperatureKelvinNow - 273.15;
                 
                 meteo.TemperatureNow = temperatureCelciusNow.ToString("0.0") + " °C";
-                meteo.Title = creneauMeteoNow;
 
                 /* Meteo +6h */
                 double temperatureKelvinH6 = double.Parse((string)results[creneauMeteoH6]["temperature"]["sol"],
@@ -41,7 +40,6 @@ namespace FontoyXamarin
                 double temperatureCelciusH6 = temperatureKelvinH6 - 273.15;
 
                 meteo.TemperatureH6 = temperatureCelciusH6.ToString("0.0") + " °C";
-                meteo.Title = creneauMeteoH6;
 
                 /* Meteo +12h */
                 double temperatureKelvinH12 = double.Parse((string)results[creneauMeteoH12]["temperature"]["sol"],
@@ -49,7 +47,6 @@ namespace FontoyXamarin
                 double temperatureCelciusH12 = temperatureKelvinH12 - 273.15;
 
                 meteo.TemperatureH12 = temperatureCelciusH12.ToString("0.0") + " °C";
-                meteo.Title = creneauMeteoH12;
 
 
                 return meteo;

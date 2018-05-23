@@ -6,11 +6,6 @@ namespace FontoyXamarin
 {
     public class Meteo
     {
-        // Because labels bind to these values, set them to an empty string to
-        // ensure that the label appears on all platforms by default.
-        public string Title { get; set; } = " ";
-        public string Temperature { get; set; } = " ";
-
         public string TemperatureNow { get; set; } = " ";
         public string PressionNow { get; set; } = " ";
         public string PluieNow { get; set; } = " ";
