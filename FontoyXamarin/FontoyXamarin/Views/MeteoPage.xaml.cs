@@ -21,8 +21,6 @@ namespace FontoyXamarin.Views
             InitializeComponent ();
 
             ViewMeteo();
-
-            ViewDateHeureCourante();
         }
 
         private async void ViewMeteo()
@@ -41,15 +39,5 @@ namespace FontoyXamarin.Views
             TempH12.Text = weatherH12.Temperature;
             creneauH12.Text = weatherH12.Title;
         }
-
-        private void ViewDateHeureCourante()
-        {
-            /* Définit le créneau actuel le plus proche des heures 03/05/08/11/14/17/20/23 */
-            DateHeureCourante = DateTime.Now;
-
-            //HeureCourante.Text = CalculCreneau(DateTime.Now.ToShortDateString(), DateTime.Now.ToLongTimeString());
-        }
-
-        
 	}
 }
