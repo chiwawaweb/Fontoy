@@ -7,10 +7,10 @@ namespace FontoyXamarin
 {
     public class Core
     {
-        public static async Task<Weather> GetWeather()
+        public static async Task<Weather> GetWeather(DateTime dateMeteo)
         {
-            //string key = "453fcf7ce64d8bd77e4013b8c6c5f496";
-            //string queryString = "http://api.openweathermap.org/data/2.5/weather?zip=" + "57650" + ",fr&appid=" + key + "&units=metric";
+            /* Calcul du créneau */
+            string creneauMeteo = CalculCreneau(dateMeteo.ToShortDateString(), dateMeteo.ToLongTimeString());
 
             string latitude = "49.3559";
             string longitude = "5.99638";
@@ -21,19 +21,16 @@ namespace FontoyXamarin
 
             dynamic results = await DataService.getDataFromService(queryString).ConfigureAwait(false);
 
-            if (results["request_state"].Value != null)
+            if ((Int64)results["request_state"].Value == 200)
             {
-                
+                double temperatureKelvin = double.Parse((string)results[creneauMeteo]["temperature"]["sol"], 
+                    System.Globalization.CultureInfo.InvariantCulture);
+
+                double temperatureCelcius = temperatureKelvin - 273.15;
+
                 Weather weather = new Weather();
-                string Temperature = (string)results[CalculCreneau(DateTime.Now.ToShortDateString(), DateTime.Now.ToLongTimeString())]["temperature"]["sol"];
 
-                //float TempX = float.Parse(Temperature);
-
-                //Temperature -= 273.15;
-                //Console.WriteLine(Temperature);
-
-                //weather.Temperature = (string)results[CalculCreneau(DateTime.Now.ToShortDateString(), DateTime.Now.ToLongTimeString())]["temperature"]["sol"] + " °C";
-                weather.Temperature = Temperature.ToString() + " °K";
+                weather.Temperature = temperatureCelcius.ToString("0.0") + " °C";
 
                 /*weather.Title = (string)results["name"];
                 weather.Temperature = (string)results["main"]["temp"] + " °C";
@@ -51,7 +48,10 @@ namespace FontoyXamarin
             
             else
             {
-                return null;
+                /* Code de retour différent de 200 */
+                Weather weather = new Weather();
+
+                return weather;
             }
         }
 

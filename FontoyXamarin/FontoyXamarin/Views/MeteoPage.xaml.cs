@@ -25,7 +25,7 @@ namespace FontoyXamarin.Views
 
         private async void ViewMeteo()
         {
-            Weather weather = await Core.GetWeather();
+            Weather weather = await Core.GetWeather(DateTime.Now);
             
             /* Affiche la température */
             Temp.Text = weather.Temperature;
