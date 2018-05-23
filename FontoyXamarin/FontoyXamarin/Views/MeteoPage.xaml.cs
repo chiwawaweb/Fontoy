@@ -16,7 +16,9 @@ namespace FontoyXamarin.Views
 
         public MeteoPage ()
 		{
-			InitializeComponent ();
+            Title = "Météo";
+
+            InitializeComponent ();
 
             ViewMeteo();
 
