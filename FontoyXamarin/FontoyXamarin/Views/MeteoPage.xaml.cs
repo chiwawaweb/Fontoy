@@ -29,6 +29,7 @@ namespace FontoyXamarin.Views
             PressionNow.Text = meteo.PressionNow;
             PluieNow.Text = meteo.PluieNow;
             VentVitesseNow.Text = meteo.VentVitesseNow;
+            VentDirectionNow.Text = meteo.VentDirectionNow;
 
             TemperatureH6.Text = meteo.TemperatureH6;
 
