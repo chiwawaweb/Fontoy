@@ -5,12 +5,14 @@ using System.Threading.Tasks;
 
 namespace FontoyXamarin
 {
-    public class Core
+    public class CoreMeteo
     {
-        public static async Task<Weather> GetWeather(DateTime dateMeteo)
+        public static async Task<Meteo> GetMeteo(DateTime dateMeteo)
         {
             /* Calcul du créneau */
-            string creneauMeteo = CalculCreneau(dateMeteo.ToShortDateString(), dateMeteo.ToLongTimeString());
+            string creneauMeteoNow = CalculCreneau(dateMeteo.ToShortDateString(), dateMeteo.ToLongTimeString());
+            string creneauMeteoH6 = CalculCreneau(dateMeteo.AddHours(6).ToShortDateString(), dateMeteo.AddHours(6).ToLongTimeString());
+            string creneauMeteoH12 = CalculCreneau(dateMeteo.AddHours(12).ToShortDateString(), dateMeteo.AddHours(12).ToLongTimeString());
 
             string latitude = "49.3559";
             string longitude = "5.99638";
@@ -23,36 +25,42 @@ namespace FontoyXamarin
 
             if ((Int64)results["request_state"].Value == 200)
             {
-                double temperatureKelvin = double.Parse((string)results[creneauMeteo]["temperature"]["sol"], 
+                Meteo meteo = new Meteo();
+
+                /* Meteo Now */
+                double temperatureKelvinNow = double.Parse((string)results[creneauMeteoNow]["temperature"]["sol"], 
                     System.Globalization.CultureInfo.InvariantCulture);
+                double temperatureCelciusNow = temperatureKelvinNow - 273.15;
+                
+                meteo.TemperatureNow = temperatureCelciusNow.ToString("0.0") + " °C";
+                meteo.Title = creneauMeteoNow;
 
-                double temperatureCelcius = temperatureKelvin - 273.15;
+                /* Meteo +6h */
+                double temperatureKelvinH6 = double.Parse((string)results[creneauMeteoH6]["temperature"]["sol"],
+                    System.Globalization.CultureInfo.InvariantCulture);
+                double temperatureCelciusH6 = temperatureKelvinH6 - 273.15;
 
-                Weather weather = new Weather();
+                meteo.TemperatureH6 = temperatureCelciusH6.ToString("0.0") + " °C";
+                meteo.Title = creneauMeteoH6;
 
-                weather.Temperature = temperatureCelcius.ToString("0.0") + " °C";
-                weather.Title = creneauMeteo;
+                /* Meteo +12h */
+                double temperatureKelvinH12 = double.Parse((string)results[creneauMeteoH12]["temperature"]["sol"],
+                    System.Globalization.CultureInfo.InvariantCulture);
+                double temperatureCelciusH12 = temperatureKelvinH12 - 273.15;
 
-                /*weather.Title = (string)results["name"];
-                weather.Temperature = (string)results["main"]["temp"] + " °C";
-                weather.Wind = (string)results["wind"]["speed"] + " mph";
-                weather.Humidity = (string)results["main"]["humidity"] + " %";
-                weather.Visibility = (string)results["weather"][0]["main"];
+                meteo.TemperatureH12 = temperatureCelciusH12.ToString("0.0") + " °C";
+                meteo.Title = creneauMeteoH12;
 
-                DateTime time = new System.DateTime(1970, 1, 1, 0, 0, 0, 0);
-                DateTime sunrise = time.AddSeconds((double)results["sys"]["sunrise"]);
-                DateTime sunset = time.AddSeconds((double)results["sys"]["sunset"]);
-                weather.Sunrise = sunrise.ToString() + " UTC";
-                weather.Sunset = sunset.ToString() + " UTC";*/
-                return weather;
+
+                return meteo;
             }
             
             else
             {
                 /* Code de retour différent de 200 */
-                Weather weather = new Weather();
+                Meteo meteo = new Meteo();
 
-                return weather;
+                return meteo;
             }
         }
 

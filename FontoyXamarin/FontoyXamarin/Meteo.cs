@@ -4,7 +4,7 @@ using System.Text;
 
 namespace FontoyXamarin
 {
-    public class Weather
+    public class Meteo
     {
         // Because labels bind to these values, set them to an empty string to
         // ensure that the label appears on all platforms by default.
