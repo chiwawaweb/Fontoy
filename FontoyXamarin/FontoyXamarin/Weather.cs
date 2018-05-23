@@ -16,6 +16,13 @@ namespace FontoyXamarin
         public string Sunrise { get; set; } = " ";
         public string Sunset { get; set; } = " ";
 
+
+        public string TemperatureNow { get; set; } = " ";
+        public string PressionNow { get; set; } = " ";
+        public string VentVitesseNow { get; set; } = " ";
+        public string VentDirectionNow { get; set; } = " ";
+        public string RisqueNeige { get; set; } = " ";
+
         
     }
 }

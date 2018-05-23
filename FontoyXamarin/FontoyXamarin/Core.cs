@@ -31,6 +31,7 @@ namespace FontoyXamarin
                 Weather weather = new Weather();
 
                 weather.Temperature = temperatureCelcius.ToString("0.0") + " °C";
+                weather.Title = creneauMeteo;
 
                 /*weather.Title = (string)results["name"];
                 weather.Temperature = (string)results["main"]["temp"] + " °C";

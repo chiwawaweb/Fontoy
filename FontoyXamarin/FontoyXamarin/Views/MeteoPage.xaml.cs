@@ -25,10 +25,19 @@ namespace FontoyXamarin.Views
 
         private async void ViewMeteo()
         {
-            Weather weather = await Core.GetWeather(DateTime.Now);
+            Weather weatherNow = await Core.GetWeather(DateTime.Now);
             
             /* Affiche la température */
-            Temp.Text = weather.Temperature;
+            TempNow.Text = weatherNow.Temperature;
+            creneauNow.Text = weatherNow.Title;
+
+            Weather weatherH6 = await Core.GetWeather(DateTime.Now.AddHours(6));
+            TempH6.Text = weatherH6.Temperature;
+            creneauH6.Text = weatherH6.Title;
+
+            Weather weatherH12 = await Core.GetWeather(DateTime.Now.AddHours(12));
+            TempH12.Text = weatherH12.Temperature;
+            creneauH12.Text = weatherH12.Title;
         }
 
         private void ViewDateHeureCourante()
