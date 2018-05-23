@@ -35,6 +35,10 @@ namespace FontoyXamarin
                 meteo.TemperatureNow = temperatureCelciusNow.ToString("0.0") + " °C";
                 meteo.PressionNow = (string)results[creneauMeteoNow]["pression"]["niveau_de_la_mer"];
                 meteo.PluieNow = (string)results[creneauMeteoNow]["pluie"];
+                meteo.VentVitesseNow = (string)results[creneauMeteoNow]["vent_moyen"]["10m"] + " km/h";
+                meteo.VentDirectionNow = (string)results[creneauMeteoNow]["vent_direction"]["10m"];
+                //meteo.NebulositeNow = (string)results[creneauMeteoNow]["nebulosite"]["totale"];
+                //meteo.RisqueNeigeNow = (string)results[creneauMeteoNow]["risque_neige"];
 
                 /* Meteo +6h */
                 double temperatureKelvinH6 = double.Parse((string)results[creneauMeteoH6]["temperature"]["sol"],
