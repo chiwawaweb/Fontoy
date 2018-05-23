@@ -3,33 +3,51 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FontoyXamarin.Views.MeteoPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Météo du jour" />
+        <ScrollView Orientation="Vertical">
+            <StackLayout>
+                <Label Text="Météo du jour" />
 
-            <Label Text="Température :" />
-            <Label x:Name="TempNow" />
+                <Label Text="Température :" />
+                <Label x:Name="TemperatureNow" />
 
-            <Label Text="Créneau actuel :" />
-            <Label x:Name="creneauNow" />
+                <Label Text="Pression :" />
+                <Label x:Name="PressionNow" />
 
-            <Label Text="Météo du jour (+6h)" />
+                <Label Text="Pluie :" />
+                <Label x:Name="PluieNow" />
 
-            <Label Text="Température :" />
-            <Label x:Name="TempH6" />
+                <Label Text="Vent :" />
+                <Label x:Name="VentVitesseNow" />
 
-            <Label Text="Créneau +6h :" />
-            <Label x:Name="creneauH6" />
+                <Label Text="Vent direction :" />
+                <Label x:Name="VentDirectionNow" />
 
-            <Label Text="Météo du jour (+12h)" />
+                <Label Text="Nuages :" />
+                <Label x:Name="NebulositeNow" />
 
-            <Label Text="Température :" />
-            <Label x:Name="TempH12" />
+                <Label Text="Risque neige : " />
+                <Label x:Name="RisqueNeigeNow" />
 
-            <Label Text="Créneau +12h :" />
-            <Label x:Name="creneauH12" />
-        </StackLayout>
-        
-        
+
+
+
+                <Label Text="Météo du jour (+6h)" />
+
+                <Label Text="Température :" />
+                <Label x:Name="TemperatureH6" />
+
+                <Label Text="Créneau +6h :" />
+                <Label x:Name="PressionH6" />
+
+                <Label Text="Météo du jour (+12h)" />
+
+                <Label Text="Température :" />
+                <Label x:Name="TemperatureH12" />
+
+                <Label Text="Créneau +12h :" />
+                <Label x:Name="PressionH12" />
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
     

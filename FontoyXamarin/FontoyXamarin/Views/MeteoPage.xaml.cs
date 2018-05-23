@@ -25,11 +25,13 @@ namespace FontoyXamarin.Views
         {
             Meteo meteo = await CoreMeteo.GetMeteo(DateTime.Now);
 
-            TempNow.Text = meteo.TemperatureNow;
+            TemperatureNow.Text = meteo.TemperatureNow;
+            PressionNow.Text = meteo.PressionNow;
+            PluieNow.Text = meteo.PluieNow;
 
-            TempH6.Text = meteo.TemperatureH6;
+            TemperatureH6.Text = meteo.TemperatureH6;
 
-            TempH12.Text = meteo.TemperatureH12;
+            TemperatureH12.Text = meteo.TemperatureH12;
         }
 	}
 }

@@ -33,6 +33,8 @@ namespace FontoyXamarin
                 double temperatureCelciusNow = temperatureKelvinNow - 273.15;
                 
                 meteo.TemperatureNow = temperatureCelciusNow.ToString("0.0") + " °C";
+                meteo.PressionNow = (string)results[creneauMeteoNow]["pression"]["niveau_de_la_mer"];
+                meteo.PluieNow = (string)results[creneauMeteoNow]["pluie"];
 
                 /* Meteo +6h */
                 double temperatureKelvinH6 = double.Parse((string)results[creneauMeteoH6]["temperature"]["sol"],
