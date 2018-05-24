@@ -3,7 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FontoyXamarin.Views.MeteoPage">
     <ContentPage.Content>
-        <ScrollView Orientation="Vertical">
+        <Grid Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.7*" />
+                <RowDefinition Height="0.3*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="0.5*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid Margin="0" Grid.Row="0" Grid.Column="0"
+                  Grid.ColumnSpan="2">
+                
+            </Grid>
+            
+            
+            
+        </Grid>
+
+            <!--<ScrollView Orientation="Vertical">
             <StackLayout>
                 <Label Text="Météo du jour" Font="Bold,20"  />
 
@@ -51,7 +70,7 @@
                 <Label Text="Créneau +12h :" />
                 <Label x:Name="PressionH12" />
             </StackLayout>
-        </ScrollView>
+        </ScrollView>)-->
     </ContentPage.Content>
 </ContentPage>
     
