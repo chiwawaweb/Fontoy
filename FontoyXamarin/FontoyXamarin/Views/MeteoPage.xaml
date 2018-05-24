@@ -64,6 +64,59 @@
                         HorizontalOptions="FillAndExpand"
                         x:Name="VentDirection">
                     </Image>
+
+                    <Label 
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Text="Vent moyen :"
+                        HorizontalTextAlignment="End" />
+                    <Label
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        x:Name="VentMoyenVitesseNow"
+                        HorizontalTextAlignment="End" />
+                    <Label
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        Text="Rafales :"
+                        HorizontalTextAlignment="End" />
+                    <Label
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        x:Name="VentRafalesVitesseNow"
+                        HorizontalTextAlignment="End" />
+                    <Label
+                        Grid.Row="4"
+                        Grid.Column="0"
+                        Text="Pluie / 3h :"
+                        HorizontalTextAlignment="End" />
+                    <Label
+                        Grid.Row="4"
+                        Grid.Column="1"
+                        x:Name="PluieNow"
+                        HorizontalTextAlignment="End" />
+                    <Label
+                        Grid.Row="5"
+                        Grid.Column="0"
+                        Text="Humidité :"
+                        HorizontalTextAlignment="End" />
+                    <Label
+                        Grid.Row="5"
+                        Grid.Column="1"
+                        x:Name="HumiditeNow"
+                        HorizontalTextAlignment="End" />
+                    <Label
+                        Grid.Row="6"
+                        Grid.Column="0"
+                        Text="Pression :"
+                        HorizontalTextAlignment="End" />
+                    <Label
+                        Grid.Row="6"
+                        Grid.Column="1"
+                        x:Name="PressionNow"
+                        HorizontalTextAlignment="End" />
+
+
                 </Grid>
                 
                 <!--<Image

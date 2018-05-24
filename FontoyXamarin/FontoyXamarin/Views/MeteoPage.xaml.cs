@@ -27,18 +27,18 @@ namespace FontoyXamarin.Views
 
             
             TemperatureNow.Text = meteo.TemperatureNow;
-            /*
+            
             PressionNow.Text = meteo.PressionNow;
             PluieNow.Text = meteo.PluieNow;
-            VentVitesseNow.Text = meteo.VentVitesseNow;
-            VentDirectionNow.Text = meteo.VentDirectionNow;
-            NebulositeNow.Text = meteo.NebulositeNow;
-            RisqueNeigeNow.Text = meteo.RisqueNeigeNow.ToUpper();
+            VentMoyenVitesseNow.Text = meteo.VentVitesseNow;
+            
+            //NebulositeNow.Text = meteo.NebulositeNow;
+            //RisqueNeigeNow.Text = meteo.RisqueNeigeNow.ToUpper();
 
-            TemperatureH6.Text = meteo.TemperatureH6;
+            //TemperatureH6.Text = meteo.TemperatureH6;
 
-            TemperatureH12.Text = meteo.TemperatureH12;
-            */
+            //TemperatureH12.Text = meteo.TemperatureH12;
+            
             VentDirection.Source = "iconFleche";
             VentDirection.Rotation = int.Parse(meteo.VentDirectionNow);
             
