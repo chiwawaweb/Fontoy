@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <ScrollView Orientation="Vertical">
             <StackLayout>
-                <Label Text="Météo du jour" />
+                <Label Text="Météo du jour" Font="Bold,20"  />
 
                 <Label Text="Température :" />
                 <Label x:Name="TemperatureNow" />
@@ -28,10 +28,10 @@
                 <Label Text="Risque neige : " />
                 <Label x:Name="RisqueNeigeNow" />
 
+                <Label Text="____________________________________" />
 
 
-
-                <Label Text="Météo du jour (+6h)" />
+                <Label Text="Météo du jour (+6h)" Font="Bold,20" />
 
                 <Label Text="Température :" />
                 <Label x:Name="TemperatureH6" />
@@ -39,7 +39,7 @@
                 <Label Text="Créneau +6h :" />
                 <Label x:Name="PressionH6" />
 
-                <Label Text="Météo du jour (+12h)" />
+                <Label Text="Météo du jour (+12h)" Font="Bold,20" />
 
                 <Label Text="Température :" />
                 <Label x:Name="TemperatureH12" />
