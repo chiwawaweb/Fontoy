@@ -29,8 +29,8 @@
                 <Frame 
                 Grid.Row="0"
                 Grid.Column="0"
-                OutlineColor="#ff99cc"
-                BackgroundColor="#ff99cc"
+                OutlineColor="#ff0000"
+                BackgroundColor="#ff0000"
                 CornerRadius="5"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand"
@@ -41,8 +41,8 @@
                 Grid.Row="0"
                 Grid.Column="1"
                 Grid.RowSpan="2"
-                OutlineColor="#ff99cc"
-                BackgroundColor="#ff99cc"
+                OutlineColor="#00ff00"
+                BackgroundColor="#00ff00"
                 CornerRadius="5"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand"
@@ -52,39 +52,15 @@
                 <Frame 
                 Grid.Row="1"
                 Grid.Column="0"
-                OutlineColor="#ff99cc"
-                BackgroundColor="#ff99cc"
+                OutlineColor="#0000ff"
+                BackgroundColor="#0000ff"
                 CornerRadius="5"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand"
                 Padding="0"
                 Margin="0"/>
 
-                <!--<Frame 
-                Grid.Row="1"
-                Grid.Column="1"
-                OutlineColor="#ff99cc"
-                BackgroundColor="#ff99cc"
-                CornerRadius="5"
-                HorizontalOptions="FillAndExpand"
-                VerticalOptions="FillAndExpand"
-                Padding="0"
-                Margin="0"/>-->
-
             </Grid>
-            
-            
-            <!--<Frame 
-                Grid.Row="0"
-                Grid.Column="0"
-                Grid.ColumnSpan="2"
-                OutlineColor="#cc99cc"
-                BackgroundColor="#cc99cc"
-                CornerRadius="5"
-                HorizontalOptions="FillAndExpand"
-                VerticalOptions="FillAndExpand"
-                Padding="0"
-                Margin="0"/>-->
 
             <Frame 
                 Grid.Row="1"
