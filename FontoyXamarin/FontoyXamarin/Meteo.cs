@@ -9,8 +9,10 @@ namespace FontoyXamarin
         public string TemperatureNow { get; set; } = " ";
         public string PressionNow { get; set; } = " ";
         public string PluieNow { get; set; } = " ";
-        public string VentVitesseNow { get; set; } = " ";
+        public string VentMoyenVitesseNow { get; set; } = " ";
+        public string VentRafalesVitesseNow { get; set; } = " ";
         public string VentDirectionNow { get; set; } = " ";
+        public string HumiditeNow { get; set; } = " ";
         public string NebulositeNow { get; set; } = " ";
         public string RisqueNeigeNow { get; set; } = " ";
 

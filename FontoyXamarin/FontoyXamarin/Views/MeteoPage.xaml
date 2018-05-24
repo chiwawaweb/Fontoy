@@ -37,7 +37,7 @@
                 Padding="0"
                 Margin="0"/>
 
-                <Grid Margin="0"
+                <Grid Margin="0,0,10,0"
                       Grid.Row="0"
                       Grid.Column="1"
                       Grid.RowSpan="2">
@@ -49,7 +49,6 @@
                         <RowDefinition Height="0.1*" />
                         <RowDefinition Height="0.1*" />
                         <RowDefinition Height="0.1*" />
-                        
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0.5*" />
@@ -64,56 +63,74 @@
                         HorizontalOptions="FillAndExpand"
                         x:Name="VentDirection">
                     </Image>
-
+                    
+                    <!-- Vitesse vent moyen -->
                     <Label 
                         Grid.Row="1"
                         Grid.Column="0"
-                        Text="Vent moyen :"
+                        Text="Moyen :"
+                        FontSize="12"
                         HorizontalTextAlignment="End" />
                     <Label
                         Grid.Row="1"
                         Grid.Column="1"
                         x:Name="VentMoyenVitesseNow"
+                        FontSize="12"
+                        FontAttributes="Bold"
                         HorizontalTextAlignment="End" />
+                    
+                    <!-- Vitesse vent rafales -->
                     <Label
                         Grid.Row="2"
                         Grid.Column="0"
                         Text="Rafales :"
+                        FontSize="12"
                         HorizontalTextAlignment="End" />
                     <Label
                         Grid.Row="2"
                         Grid.Column="1"
                         x:Name="VentRafalesVitesseNow"
+                        FontSize="12"
+                        FontAttributes="Bold"
                         HorizontalTextAlignment="End" />
                     <Label
                         Grid.Row="4"
                         Grid.Column="0"
                         Text="Pluie / 3h :"
+                        FontSize="12"
                         HorizontalTextAlignment="End" />
                     <Label
                         Grid.Row="4"
                         Grid.Column="1"
                         x:Name="PluieNow"
+                        FontSize="12"
+                        FontAttributes="Bold"
                         HorizontalTextAlignment="End" />
                     <Label
                         Grid.Row="5"
                         Grid.Column="0"
                         Text="Humidité :"
+                        FontSize="12"
                         HorizontalTextAlignment="End" />
                     <Label
                         Grid.Row="5"
                         Grid.Column="1"
                         x:Name="HumiditeNow"
+                        FontSize="12"
+                        FontAttributes="Bold"
                         HorizontalTextAlignment="End" />
                     <Label
                         Grid.Row="6"
                         Grid.Column="0"
                         Text="Pression :"
+                        FontSize="12"
                         HorizontalTextAlignment="End" />
                     <Label
                         Grid.Row="6"
                         Grid.Column="1"
                         x:Name="PressionNow"
+                        FontSize="12"
+                        FontAttributes="Bold"
                         HorizontalTextAlignment="End" />
 
 

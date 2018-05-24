@@ -30,6 +30,9 @@ namespace FontoyXamarin
                 /* Récupération des données JSON */
                 int jsonPressionNow = (int)results[creneauMeteoNow]["pression"]["niveau_de_la_mer"];
                 int jsonVentDirectionNow = (int)results[creneauMeteoNow]["vent_direction"]["10m"];
+                double jsonVentMoyenVitesse = (double)results[creneauMeteoNow]["vent_moyen"]["10m"];
+                double jsonVentRafalesVitesse = (double)results[creneauMeteoNow]["vent_rafales"]["10m"];
+                int jsonHumiditeNow = (int)results[creneauMeteoNow]["humidite"]["2m"];
 
                 /* Conversion des données */
 
@@ -47,8 +50,10 @@ namespace FontoyXamarin
                 meteo.TemperatureNow = " " + temperatureCelciusNow.ToString("0") + " °C";
                 meteo.PressionNow = pressionNow.ToString() + " hPa";
                 meteo.PluieNow = (string)results[creneauMeteoNow]["pluie"] + " mm";
-                meteo.VentVitesseNow = (string)results[creneauMeteoNow]["vent_moyen"]["10m"] + " km/h";
+                meteo.VentMoyenVitesseNow = (string)results[creneauMeteoNow]["vent_moyen"]["10m"] + " km/h";
+                meteo.VentRafalesVitesseNow = jsonVentRafalesVitesse + " km/h";
                 meteo.VentDirectionNow = CalculVentDirection(jsonVentDirectionNow).ToString();
+                meteo.HumiditeNow = jsonHumiditeNow + " %";
                 meteo.NebulositeNow = (string)results[creneauMeteoNow]["nebulosite"]["totale"] +  " %";
                 meteo.RisqueNeigeNow = (string)results[creneauMeteoNow]["risque_neige"];
 
