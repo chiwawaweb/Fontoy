@@ -25,6 +25,8 @@ namespace FontoyXamarin
 
             if ((Int64)results["request_state"].Value == 200)
             {
+                int _ventDirectionNow;
+
                 Meteo meteo = new Meteo();
 
                 /* Meteo Now */
@@ -33,12 +35,29 @@ namespace FontoyXamarin
                 double temperatureKelvinNow = double.Parse((string)results[creneauMeteoNow]["temperature"]["sol"], 
                     System.Globalization.CultureInfo.InvariantCulture);
                 double temperatureCelciusNow = temperatureKelvinNow - 273.15;
+
+                int ventDirectionNow = (int)results[creneauMeteoNow]["vent_direction"]["10m"];
                 
+                if (ventDirectionNow<360)
+                {
+                    _ventDirectionNow = (ventDirectionNow % 360) - 180;
+                }
+                else if (ventDirectionNow>360)
+                {
+                    _ventDirectionNow = (ventDirectionNow % 360) + 180;
+                }
+                else
+                {
+                    _ventDirectionNow = 0;
+                }
+
+                Console.WriteLine("******* " + _ventDirectionNow);
+
                 meteo.TemperatureNow = temperatureCelciusNow.ToString("0.0") + " °C";
                 meteo.PressionNow = pressionNow.ToString() + " hPa";
                 meteo.PluieNow = (string)results[creneauMeteoNow]["pluie"] + " mm";
                 meteo.VentVitesseNow = (string)results[creneauMeteoNow]["vent_moyen"]["10m"] + " km/h";
-                meteo.VentDirectionNow = (string)results[creneauMeteoNow]["vent_direction"]["10m"] + " °";
+                meteo.VentDirectionNow = _ventDirectionNow + " °";
                 meteo.NebulositeNow = (string)results[creneauMeteoNow]["nebulosite"]["totale"] +  " %";
                 meteo.RisqueNeigeNow = (string)results[creneauMeteoNow]["risque_neige"];
 
