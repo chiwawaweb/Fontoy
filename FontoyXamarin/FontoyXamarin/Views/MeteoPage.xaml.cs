@@ -36,6 +36,9 @@ namespace FontoyXamarin.Views
             TemperatureH6.Text = meteo.TemperatureH6;
 
             TemperatureH12.Text = meteo.TemperatureH12;
+
+            VentDirection.Source = "iconFleche";
+            VentDirection.Rotation = int.Parse(meteo.VentDirectionNow);
         }
 	}
 }

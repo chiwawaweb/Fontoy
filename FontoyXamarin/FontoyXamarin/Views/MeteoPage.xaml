@@ -22,6 +22,10 @@
                 <Label Text="Vent direction :" />
                 <Label x:Name="VentDirectionNow" />
 
+                <Image 
+                       x:Name="VentDirection" >
+                </Image>
+
                 <Label Text="Nuages :" />
                 <Label x:Name="NebulositeNow" />
 
