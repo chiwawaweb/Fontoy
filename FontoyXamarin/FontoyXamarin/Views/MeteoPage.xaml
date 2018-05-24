@@ -37,6 +37,43 @@
                 Padding="0"
                 Margin="0"/>
 
+                <Grid Margin="0"
+                      Grid.Row="0"
+                      Grid.Column="1"
+                      Grid.RowSpan="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.2*" />
+                        <RowDefinition Height="0.1*" />
+                        <RowDefinition Height="0.3*" />
+                        <RowDefinition Height="0.4*" />
+                        <RowDefinition Height="0.1*" />
+                        <RowDefinition Height="0.1*" />
+                        <RowDefinition Height="0.1*" />
+                        
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*" />
+                        <ColumnDefinition Width="0.5*" />
+                    </Grid.ColumnDefinitions>
+                    
+                    <!-- Direction du vent -->
+                    <Image
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        HorizontalOptions="FillAndExpand"
+                        x:Name="VentDirection">
+                    </Image>
+                </Grid>
+                
+                <!--<Image
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Grid.RowSpan="2"
+                    HorizontalOptions="FillAndExpand"
+                    x:Name="VentDirection" >
+                </Image>-->
+                <!--
                 <Frame 
                 Grid.Row="0"
                 Grid.Column="1"
@@ -48,25 +85,17 @@
                 VerticalOptions="FillAndExpand"
                 Padding="0"
                 Margin="0"/>
+                -->
                 
                 <!-- Température -->
                 <Label Grid.Row="1"
-                       Grid.Column="0"
-                       x:Name="TemperatureNow"
-                       FontSize="22"
-                       HorizontalTextAlignment="Start"
-                       />
-
-                <!--<Frame 
-                Grid.Row="1"
-                Grid.Column="0"
-                OutlineColor="#0000ff"
-                BackgroundColor="#0000ff"
-                CornerRadius="5"
-                HorizontalOptions="FillAndExpand"
-                VerticalOptions="FillAndExpand"
-                Padding="0"
-                Margin="0"/>-->
+                    Grid.Column="0"
+                    x:Name="TemperatureNow"
+                    FontSize="50"
+                    FontAttributes="Bold"
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Start"
+                    />
 
             </Grid>
 
