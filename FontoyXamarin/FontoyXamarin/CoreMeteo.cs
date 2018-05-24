@@ -44,7 +44,7 @@ namespace FontoyXamarin
                 
                 
 
-                meteo.TemperatureNow = temperatureCelciusNow.ToString("0.0") + " °C";
+                meteo.TemperatureNow = temperatureCelciusNow.ToString("0") + " °C";
                 meteo.PressionNow = pressionNow.ToString() + " hPa";
                 meteo.PluieNow = (string)results[creneauMeteoNow]["pluie"] + " mm";
                 meteo.VentVitesseNow = (string)results[creneauMeteoNow]["vent_moyen"]["10m"] + " km/h";

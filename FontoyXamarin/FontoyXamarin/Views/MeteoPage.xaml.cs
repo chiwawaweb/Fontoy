@@ -25,8 +25,9 @@ namespace FontoyXamarin.Views
         {
             Meteo meteo = await CoreMeteo.GetMeteo(DateTime.Now);
 
-            /*
+            
             TemperatureNow.Text = meteo.TemperatureNow;
+            /*
             PressionNow.Text = meteo.PressionNow;
             PluieNow.Text = meteo.PluieNow;
             VentVitesseNow.Text = meteo.VentVitesseNow;

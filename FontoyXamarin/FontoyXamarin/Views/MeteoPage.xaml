@@ -48,8 +48,16 @@
                 VerticalOptions="FillAndExpand"
                 Padding="0"
                 Margin="0"/>
+                
+                <!-- Température -->
+                <Label Grid.Row="1"
+                       Grid.Column="0"
+                       x:Name="TemperatureNow"
+                       FontSize="22"
+                       HorizontalTextAlignment="Start"
+                       />
 
-                <Frame 
+                <!--<Frame 
                 Grid.Row="1"
                 Grid.Column="0"
                 OutlineColor="#0000ff"
@@ -58,7 +66,7 @@
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand"
                 Padding="0"
-                Margin="0"/>
+                Margin="0"/>-->
 
             </Grid>
 
