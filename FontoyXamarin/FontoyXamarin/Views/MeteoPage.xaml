@@ -5,26 +5,112 @@
     <ContentPage.Content>
         <Grid Margin="0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="0.7*" />
-                <RowDefinition Height="0.3*" />
+                <RowDefinition Height="0.65*" />
+                <RowDefinition Height="0.35*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.5*" />
                 <ColumnDefinition Width="0.5*" />
             </Grid.ColumnDefinitions>
 
-            <Grid Margin="0" Grid.Row="0" Grid.Column="0"
+            <Grid Margin="0"
+                  Grid.Row="0"
+                  Grid.Column="0"
                   Grid.ColumnSpan="2">
-                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.75*" />
+                    <RowDefinition Height="0.25*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.6*" />
+                    <ColumnDefinition Width="0.4*" />
+                </Grid.ColumnDefinitions>
+
+                <Frame 
+                Grid.Row="0"
+                Grid.Column="0"
+                OutlineColor="#ff99cc"
+                BackgroundColor="#ff99cc"
+                CornerRadius="5"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Padding="0"
+                Margin="0"/>
+
+                <Frame 
+                Grid.Row="0"
+                Grid.Column="1"
+                Grid.RowSpan="2"
+                OutlineColor="#ff99cc"
+                BackgroundColor="#ff99cc"
+                CornerRadius="5"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Padding="0"
+                Margin="0"/>
+
+                <Frame 
+                Grid.Row="1"
+                Grid.Column="0"
+                OutlineColor="#ff99cc"
+                BackgroundColor="#ff99cc"
+                CornerRadius="5"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Padding="0"
+                Margin="0"/>
+
+                <!--<Frame 
+                Grid.Row="1"
+                Grid.Column="1"
+                OutlineColor="#ff99cc"
+                BackgroundColor="#ff99cc"
+                CornerRadius="5"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Padding="0"
+                Margin="0"/>-->
+
             </Grid>
             
             
-            
-        </Grid>
+            <!--<Frame 
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                OutlineColor="#cc99cc"
+                BackgroundColor="#cc99cc"
+                CornerRadius="5"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Padding="0"
+                Margin="0"/>-->
 
-            <!--<ScrollView Orientation="Vertical">
-            <StackLayout>
-                <Label Text="Météo du jour" Font="Bold,20"  />
+            <Frame 
+                Grid.Row="1"
+                Grid.Column="0"
+                OutlineColor="#ff99cc"
+                BackgroundColor="#ff99cc"
+                CornerRadius="5"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Padding="0"
+                Margin="0"/>
+
+            <Frame 
+                Grid.Row="1"
+                Grid.Column="1"
+                OutlineColor="#0099cc"
+                BackgroundColor="#0099cc"
+                CornerRadius="5"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Padding="0"
+                Margin="0"/>
+            </Grid>
+        
+
+        <!--<Label Text="Météo du jour" Font="Bold,20"  />
 
                 <Label Text="Température :" />
                 <Label x:Name="TemperatureNow" />
@@ -69,8 +155,13 @@
 
                 <Label Text="Créneau +12h :" />
                 <Label x:Name="PressionH12" />
-            </StackLayout>
-        </ScrollView>)-->
+
+           -->
+        
+            
+                
+            
+
     </ContentPage.Content>
 </ContentPage>
     

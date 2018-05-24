@@ -25,6 +25,7 @@ namespace FontoyXamarin.Views
         {
             Meteo meteo = await CoreMeteo.GetMeteo(DateTime.Now);
 
+            /*
             TemperatureNow.Text = meteo.TemperatureNow;
             PressionNow.Text = meteo.PressionNow;
             PluieNow.Text = meteo.PluieNow;
@@ -39,6 +40,7 @@ namespace FontoyXamarin.Views
 
             VentDirection.Source = "iconFleche";
             VentDirection.Rotation = int.Parse(meteo.VentDirectionNow);
+            */
         }
 	}
 }
