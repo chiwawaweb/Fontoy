@@ -26,15 +26,14 @@
                     <ColumnDefinition Width="0.4*" />
                 </Grid.ColumnDefinitions>
 
-                <Frame 
-                Grid.Row="0"
-                Grid.Column="0"
-                OutlineColor="#ff0000"
-                BackgroundColor="#ff0000"
-                CornerRadius="5"
-                HorizontalOptions="FillAndExpand"
-                VerticalOptions="FillAndExpand"
-                Margin="0"/>
+                <Image
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    HorizontalOptions="FillAndExpand"
+                    x:Name="ConditionsImage">
+                    
+                </Image>
+                
 
                 <Grid ColumnSpacing="0" RowSpacing="0"
                       Grid.Row="0"
@@ -73,7 +72,7 @@
                         Margin="0"
                         Grid.Row="1"
                         Grid.Column="1"
-                        x:Name="VentMoyenVitesseNow"
+                        x:Name="VentVitesseMoyenne"
                         FontSize="12"
                         FontAttributes="Bold"
                         HorizontalTextAlignment="End" />
@@ -88,7 +87,7 @@
                     <Label
                         Grid.Row="2"
                         Grid.Column="1"
-                        x:Name="VentRafalesVitesseNow"
+                        x:Name="VentVitesseRafales"
                         FontSize="12"
                         FontAttributes="Bold"
                         HorizontalTextAlignment="End" />
@@ -145,7 +144,7 @@
                 <!-- Température -->
                 <Label Grid.Row="1"
                     Grid.Column="0"
-                    x:Name="TemperatureNow"
+                    x:Name="Temperature"
                     FontSize="50"
                     FontAttributes="Bold"
                     VerticalTextAlignment="Center"

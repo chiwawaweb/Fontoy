@@ -7,14 +7,13 @@ namespace FontoyXamarin
     public class Meteo
     {
         public string Temperature { get; set; } = " ";
-        public string PressionNow { get; set; } = " ";
-        public string PluieNow { get; set; } = " ";
-        public string VentMoyenVitesseNow { get; set; } = " ";
-        public string VentRafalesVitesseNow { get; set; } = " ";
-        public string VentDirectionNow { get; set; } = " ";
-        public string HumiditeNow { get; set; } = " ";
-        public string NebulositeNow { get; set; } = " ";
-        public string RisqueNeigeNow { get; set; } = " ";
+        public string Pression { get; set; } = " ";
+        public string VentVitesseMoyenne { get; set; } = " ";
+        public string VentVitesseRafales { get; set; } = " ";
+        public string VentDirection { get; set; } = " ";
+        public string Humidite { get; set; } = " ";
+        public string ConditionsImage { get; set; } = " ";
+
 
         public string TemperatureH6 { get; set; } = " ";
         public string PressionH6 { get; set; } = " ";

@@ -13,46 +13,25 @@ namespace FontoyXamarin
 
             dynamic results = await DataService.getDataFromService(queryString).ConfigureAwait(false);
 
-
             if ((string)results["city_info"]["name"]=="Fontoy")
             {
                 Meteo meteo = new Meteo();
 
                 /* Récupération des données JSON */
                 int temperature = (int)results["current_condition"]["tmp"];
-
-                Console.WriteLine((string)results["current_condition"]["condition_key"]);
-                /*
-                int jsonPressionNow = (int)results[creneauMeteoNow]["pression"]["niveau_de_la_mer"];
-                int jsonVentDirectionNow = (int)results[creneauMeteoNow]["vent_direction"]["10m"];
-                double jsonVentMoyenVitesse = (double)results[creneauMeteoNow]["vent_moyen"]["10m"];
-                double jsonVentRafalesVitesse = (double)results[creneauMeteoNow]["vent_rafales"]["10m"];
-                int jsonHumiditeNow = (int)results[creneauMeteoNow]["humidite"]["2m"];
-                */
+                int ventVitesseMoyenne = (int)results["current_condition"]["wnd_spd"];
+                int ventVitesseRafales = (int)results["current_condition"]["wnd_gust"];
+                string ventDirection = (string)results["current_condition"]["wnd_dir"];
+                string conditions = (string)results["current_condition"]["condition_key"];
 
                 /* Conversion des données */
-
+                string conditionsImage = "meteo_" + conditions.Replace("-","_") + "_big";
 
                 /* Envoi des données */
                 meteo.Temperature = temperature + " °C";
-
-
-                /* Meteo Now */
-                /*int pressionNow = jsonPressionNow / 100;
-
-                double temperatureKelvinNow = double.Parse((string)results[creneauMeteoNow]["temperature"]["sol"], 
-                    System.Globalization.CultureInfo.InvariantCulture);
-                double temperatureCelciusNow = temperatureKelvinNow - 273.15;
-
-                meteo.TemperatureNow = " " + temperatureCelciusNow.ToString("0") + " °C";
-                meteo.PressionNow = pressionNow.ToString() + " hPa";
-                meteo.VentMoyenVitesseNow = jsonVentMoyenVitesse + " km/h";
-                meteo.VentRafalesVitesseNow = jsonVentRafalesVitesse + " km/h";
-                meteo.VentDirectionNow = CalculVentDirection(jsonVentDirectionNow).ToString();
-                meteo.HumiditeNow = jsonHumiditeNow + " %";
-                meteo.NebulositeNow = (string)results[creneauMeteoNow]["nebulosite"]["totale"] +  " %";
-                meteo.RisqueNeigeNow = (string)results[creneauMeteoNow]["risque_neige"];
-                */
+                meteo.VentVitesseMoyenne = ventVitesseMoyenne + " km/h";
+                meteo.VentVitesseRafales = ventVitesseRafales + " km/h";
+                meteo.ConditionsImage = conditionsImage;
 
                 return meteo;
             }

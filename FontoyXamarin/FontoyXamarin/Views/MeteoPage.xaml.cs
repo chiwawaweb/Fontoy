@@ -27,7 +27,11 @@ namespace FontoyXamarin.Views
             Meteo meteo = await CoreMeteo.GetMeteo();
             
             Temperature.Text = meteo.Temperature;
+            VentVitesseMoyenne.Text = meteo.VentVitesseMoyenne;
+            VentVitesseRafales.Text = meteo.VentVitesseRafales;
+            ConditionsImage.Source = meteo.ConditionsImage;
 
+            Console.WriteLine(meteo.ConditionsImage); // tmp test
             
 
             /*
