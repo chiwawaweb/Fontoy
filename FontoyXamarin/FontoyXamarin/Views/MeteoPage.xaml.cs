@@ -23,26 +23,19 @@ namespace FontoyXamarin.Views
 
         private async void ViewMeteo()
         {
-            Meteo meteo = await CoreMeteo.GetMeteo(DateTime.Now);
             
+            Meteo meteo = await CoreMeteo.GetMeteo(DateTime.Now);
+            /*
             TemperatureNow.Text = meteo.TemperatureNow;
             
             PressionNow.Text = meteo.PressionNow;
-            PluieNow.Text = meteo.PluieNow;
             VentMoyenVitesseNow.Text = meteo.VentMoyenVitesseNow;
             VentRafalesVitesseNow.Text = meteo.VentRafalesVitesseNow;
             HumiditeNow.Text = meteo.HumiditeNow;
 
-            //NebulositeNow.Text = meteo.NebulositeNow;
-            //RisqueNeigeNow.Text = meteo.RisqueNeigeNow.ToUpper();
-
-            //TemperatureH6.Text = meteo.TemperatureH6;
-
-            //TemperatureH12.Text = meteo.TemperatureH12;
-            
             VentDirection.Source = "iconFleche";
             VentDirection.Rotation = int.Parse(meteo.VentDirectionNow);
-            
+            */
         }
 	}
 }

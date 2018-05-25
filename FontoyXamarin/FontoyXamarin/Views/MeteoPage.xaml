@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FontoyXamarin.Views.MeteoPage">
     <ContentPage.Content>
-        <Grid Margin="0">
+        <Grid Margin="10" RowSpacing="0" ColumnSpacing="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.65*" />
                 <RowDefinition Height="0.35*" />
@@ -34,21 +34,19 @@
                 CornerRadius="5"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand"
-                Padding="0"
                 Margin="0"/>
 
-                <Grid Margin="0,0,10,0"
+                <Grid ColumnSpacing="0" RowSpacing="0"
                       Grid.Row="0"
                       Grid.Column="1"
                       Grid.RowSpan="2">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="0.2*" />
-                        <RowDefinition Height="0.1*" />
-                        <RowDefinition Height="0.3*" />
-                        <RowDefinition Height="0.4*" />
-                        <RowDefinition Height="0.1*" />
-                        <RowDefinition Height="0.1*" />
-                        <RowDefinition Height="0.1*" />
+                        <RowDefinition Height="20*" />
+                        <RowDefinition Height="05*" />
+                        <RowDefinition Height="05*" />
+                        <RowDefinition Height="60*" />
+                        <RowDefinition Height="05*" />
+                        <RowDefinition Height="05*" />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0.6*" />
@@ -65,13 +63,14 @@
                     </Image>
                     
                     <!-- Vitesse vent moyen -->
-                    <Label 
+                    <Label Margin="0"
                         Grid.Row="1"
                         Grid.Column="0"
                         Text="Moyen :"
                         FontSize="12"
                         HorizontalTextAlignment="End" />
                     <Label
+                        Margin="0"
                         Grid.Row="1"
                         Grid.Column="1"
                         x:Name="VentMoyenVitesseNow"
@@ -96,37 +95,24 @@
                     <Label
                         Grid.Row="4"
                         Grid.Column="0"
-                        Text="Pluie / 3h :"
-                        FontSize="12"
-                        HorizontalTextAlignment="End" />
-                    <Label
-                        Grid.Row="4"
-                        Grid.Column="1"
-                        x:Name="PluieNow"
-                        FontSize="12"
-                        FontAttributes="Bold"
-                        HorizontalTextAlignment="End" />
-                    <Label
-                        Grid.Row="5"
-                        Grid.Column="0"
                         Text="Humidité :"
                         FontSize="12"
                         HorizontalTextAlignment="End" />
                     <Label
-                        Grid.Row="5"
+                        Grid.Row="4"
                         Grid.Column="1"
                         x:Name="HumiditeNow"
                         FontSize="12"
                         FontAttributes="Bold"
                         HorizontalTextAlignment="End" />
                     <Label
-                        Grid.Row="6"
+                        Grid.Row="5"
                         Grid.Column="0"
                         Text="Pression :"
                         FontSize="12"
                         HorizontalTextAlignment="End" />
                     <Label
-                        Grid.Row="6"
+                        Grid.Row="5"
                         Grid.Column="1"
                         x:Name="PressionNow"
                         FontSize="12"
@@ -153,7 +139,6 @@
                 CornerRadius="5"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand"
-                Padding="0"
                 Margin="0"/>
                 -->
                 
@@ -177,7 +162,6 @@
                 CornerRadius="5"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand"
-                Padding="0"
                 Margin="0"/>
 
             <Frame 
@@ -188,7 +172,6 @@
                 CornerRadius="5"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand"
-                Padding="0"
                 Margin="0"/>
             </Grid>
         
