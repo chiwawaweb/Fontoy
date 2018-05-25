@@ -6,7 +6,7 @@ namespace FontoyXamarin
 {
     public class Meteo
     {
-        public string TemperatureNow { get; set; } = " ";
+        public string Temperature { get; set; } = " ";
         public string PressionNow { get; set; } = " ";
         public string PluieNow { get; set; } = " ";
         public string VentMoyenVitesseNow { get; set; } = " ";

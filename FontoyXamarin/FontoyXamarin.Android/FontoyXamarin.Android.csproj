@@ -181,112 +181,112 @@
     <AndroidResource Include="Resources\drawable\iconFleche.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\averses-de-neige-faible-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_averses_de_neige_faible_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\averses-de-pluie-faible-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_averses_de_pluie_faible_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\averses-de-pluie-forte-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_averses_de_pluie_forte_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\averses-de-pluie-moderee-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_averses_de_pluie_moderee_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\brouillard-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_brouillard_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\ciel-voile-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_ciel_voile_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\couvert-avec-averses-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_couvert_avec_averses_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\developpement-nuageux-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_developpement_nuageux_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\eclaircies-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_eclaircies_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\ensoleille-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_ensoleille_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\faiblement-nuageux-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_faiblement_nuageux_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\faiblement-orageux-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_faiblement_orageux_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\faibles-passages-nuageux-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_faibles_passages_nuageux_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\fortement-nuageux-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_fortement_nuageux_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\fortement-orageux-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_fortement_orageux_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\neige-faible-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_neige_faible_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\neige-forte-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_neige_forte_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\neige-moderee-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_neige_moderee_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\nuit-avec-averses-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_nuit_avec_averses_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\nuit-avec-averses-de-neige-faible-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_nuit_avec_averses_de_neige_faible_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\nuit-avec-developpement-nuageux-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_nuit_avec_developpement_nuageux_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\nuit-bien-degagee-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_nuit_bien_degagee_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\nuit-claire-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_nuit_claire_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\nuit-claire-et-stratus-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_nuit_claire_et_stratus_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\nuit-faiblement-orageuse-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_nuit_faiblement_orageuse_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\nuit-legerement-voilee-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_nuit_legerement_voilee_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\nuit-nuageuse-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_nuit_nuageuse_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\orage-modere-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_orage_modere_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\pluie-et-neige-melee-faible-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_pluie_et_neige_melee_faible_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\pluie-et-neige-melee-forte-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_pluie_et_neige_melee_forte_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\pluie-et-neige-melee-moderee-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_pluie_et_neige_melee_moderee_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\pluie-faible-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_pluie_faible_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\pluie-forte-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_pluie_forte_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\pluie-moderee-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_pluie_moderee_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\stratus-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_stratus_big.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\meteo\stratus-se-dissipant-big.png" />
+    <AndroidResource Include="Resources\drawable\meteo_stratus_se_dissipant_big.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

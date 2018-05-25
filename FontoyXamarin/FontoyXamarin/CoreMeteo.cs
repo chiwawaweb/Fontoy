@@ -34,7 +34,7 @@ namespace FontoyXamarin
 
 
                 /* Envoi des données */
-                meteo.TemperatureNow = temperature + " °C";
+                meteo.Temperature = temperature + " °C";
 
 
                 /* Meteo Now */
