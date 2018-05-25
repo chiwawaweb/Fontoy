@@ -50,7 +50,7 @@ namespace FontoyXamarin
                 meteo.TemperatureNow = " " + temperatureCelciusNow.ToString("0") + " °C";
                 meteo.PressionNow = pressionNow.ToString() + " hPa";
                 meteo.PluieNow = (string)results[creneauMeteoNow]["pluie"] + " mm";
-                meteo.VentMoyenVitesseNow = (string)results[creneauMeteoNow]["vent_moyen"]["10m"] + " km/h";
+                meteo.VentMoyenVitesseNow = jsonVentMoyenVitesse + " km/h";
                 meteo.VentRafalesVitesseNow = jsonVentRafalesVitesse + " km/h";
                 meteo.VentDirectionNow = CalculVentDirection(jsonVentDirectionNow).ToString();
                 meteo.HumiditeNow = jsonHumiditeNow + " %";
