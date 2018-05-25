@@ -32,17 +32,7 @@ namespace FontoyXamarin.Views
             ConditionsImage.Source = meteo.ConditionsImage;
 
             Console.WriteLine(meteo.ConditionsImage); // tmp test
-            
 
-            /*
-            PressionNow.Text = meteo.PressionNow;
-            VentMoyenVitesseNow.Text = meteo.VentMoyenVitesseNow;
-            VentRafalesVitesseNow.Text = meteo.VentRafalesVitesseNow;
-            HumiditeNow.Text = meteo.HumiditeNow;
-
-            VentDirection.Source = "iconFleche";
-            VentDirection.Rotation = int.Parse(meteo.VentDirectionNow);
-            */
         }
 	}
 }
