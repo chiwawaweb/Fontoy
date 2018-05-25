@@ -16,11 +16,11 @@
     
     <ContentPage.Content>
         <ScrollView Orientation="Vertical">
-            <Grid Margin="0">
+            <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="120" />
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="10" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -35,8 +35,7 @@
                 </Image>
 
                 <Grid 
-                    Margin="0"
-                    Padding="10,0,10,0"
+                    Margin="10,5,10,0" RowSpacing="10" ColumnSpacing="10"
                     Grid.Row="1"
                     Grid.Column="0">
                     <Grid.RowDefinitions>
@@ -59,7 +58,7 @@
                         HasShadow="True"
                         OutlineColor="#0099cc"
                         BackgroundColor="#0099cc"
-                        CornerRadius="5"
+                        CornerRadius="2"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
                         Padding="0"
@@ -86,9 +85,8 @@
                         BackgroundColor="#FFCC00"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
-                        
-                        Padding="0"
-                        Margin="0">
+                        Margin="0"
+                        Padding="0">
                         <Image Source="iconAgenda"
                             HorizontalOptions="Center" >
                             <Image.GestureRecognizers>
@@ -109,8 +107,8 @@
                         BackgroundColor="#cc0000"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
-                        Padding="0"
-                        Margin="0" >
+                        Margin="0"
+                        Padding="0">
                         <Image Source="iconAlertes"
                             HorizontalOptions="Center" >
                             <Image.GestureRecognizers>
@@ -128,12 +126,12 @@
                         Grid.Column="0"
                         HasShadow="True"
                         CornerRadius="5"
-                        OutlineColor="#00cc00"
-                        BackgroundColor="#00cc00"
+                        OutlineColor="#339933"
+                        BackgroundColor="#339933"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
-                        Padding="0"
-                        Margin="0">
+                        Margin="0"
+                        Padding="0">
                         <Image Source="iconMeteo"
                             HorizontalOptions="Center" >
                             <Image.GestureRecognizers>
@@ -154,8 +152,8 @@
                         BackgroundColor="#ff99cc"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
-                        Padding="0"
-                        Margin="0">
+                        Margin="0"
+                        Padding="0">
                         <Image Source="iconElus"
                             HorizontalOptions="Center" >
                             <Image.GestureRecognizers>
@@ -176,8 +174,8 @@
                         BackgroundColor="#7B0099"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
-                        Padding="0"
-                        Margin="0">
+                        Margin="0"
+                        Padding="0">
                         <Image Source="iconDEA"
                             HorizontalOptions="Center" >
                             <Image.GestureRecognizers>
@@ -199,8 +197,8 @@
                         BackgroundColor="#ff6600"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
-                        Padding="0"
-                        Margin="0">
+                        Margin="0"
+                        Padding="0">
                         <Image Source="iconUrgences"
                             HorizontalOptions="Center" >
                             <Image.GestureRecognizers>
@@ -221,7 +219,6 @@
                         BackgroundColor="#0099ff"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
-                        Padding="0"
                         Margin="0">
                         <Image Source="iconSignalement"
                             HorizontalOptions="Center" >
@@ -243,7 +240,6 @@
                         BackgroundColor="#ccccff"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
-                        Padding="0"
                         Margin="0">
                         <Image Source="iconAgenda"
                             HorizontalOptions="Center" >
@@ -266,7 +262,6 @@
                         BackgroundColor="#cc99ff"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
-                        Padding="0"
                         Margin="0">
                         <Image Source="iconAgenda"
                             HorizontalOptions="Center" >
@@ -288,7 +283,6 @@
                         BackgroundColor="#cc66ff"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
-                        Padding="0"
                         Margin="0">
                         <Image Source="iconAgenda"
                             HorizontalOptions="Center" >
@@ -310,8 +304,8 @@
                         BackgroundColor="#3b5998"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
-                        Padding="0"
-                        Margin="0">
+                        Margin="0"
+                        Padding="-10">
                         <Image Source="iconFacebook"
                             HorizontalOptions="Center" >
                             <Image.GestureRecognizers>

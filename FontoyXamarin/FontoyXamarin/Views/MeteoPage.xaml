@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FontoyXamarin.Views.MeteoPage">
     <ContentPage.Content>
-        <Grid Margin="10" RowSpacing="0" ColumnSpacing="0">
+        <Grid Margin="10" RowSpacing="0" ColumnSpacing="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.65*" />
                 <RowDefinition Height="0.35*" />
@@ -34,7 +34,6 @@
                     
                 </Image>
                 
-
                 <Grid ColumnSpacing="0" RowSpacing="0"
                       Grid.Row="0"
                       Grid.Column="1"
@@ -121,43 +120,21 @@
 
                 </Grid>
                 
-                <!--<Image
-                    Grid.Row="0"
-                    Grid.Column="1"
-                    Grid.RowSpan="2"
-                    HorizontalOptions="FillAndExpand"
-                    x:Name="VentDirection" >
-                </Image>-->
-                <!--
-                <Frame 
-                Grid.Row="0"
-                Grid.Column="1"
-                Grid.RowSpan="2"
-                OutlineColor="#00ff00"
-                BackgroundColor="#00ff00"
-                CornerRadius="5"
-                HorizontalOptions="FillAndExpand"
-                VerticalOptions="FillAndExpand"
-                Margin="0"/>
-                -->
-                
                 <!-- Température -->
                 <Label Grid.Row="1"
                     Grid.Column="0"
                     x:Name="Temperature"
                     FontSize="50"
+                       FontFamily="Tahoma"
                     FontAttributes="Bold"
                     VerticalTextAlignment="Center"
-                    HorizontalTextAlignment="Start"
-                    />
-
+                    HorizontalTextAlignment="Start" />
             </Grid>
 
             <Frame 
                 Grid.Row="1"
                 Grid.Column="0"
-                OutlineColor="#ff99cc"
-                BackgroundColor="#ff99cc"
+                OutlineColor="#CCCCCC"
                 CornerRadius="5"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand"
@@ -166,66 +143,12 @@
             <Frame 
                 Grid.Row="1"
                 Grid.Column="1"
-                OutlineColor="#0099cc"
-                BackgroundColor="#0099cc"
+                OutlineColor="#CCCCCC"
                 CornerRadius="5"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand"
                 Margin="0"/>
             </Grid>
-        
-
-        <!--<Label Text="Météo du jour" Font="Bold,20"  />
-
-                <Label Text="Température :" />
-                <Label x:Name="TemperatureNow" />
-
-                <Label Text="Pression :" />
-                <Label x:Name="PressionNow" />
-
-                <Label Text="Pluie :" />
-                <Label x:Name="PluieNow" />
-
-                <Label Text="Vent :" />
-                <Label x:Name="VentVitesseNow" />
-
-                <Label Text="Vent direction :" />
-                <Label x:Name="VentDirectionNow" />
-
-                <Image 
-                       x:Name="VentDirection" >
-                </Image>
-
-                <Label Text="Nuages :" />
-                <Label x:Name="NebulositeNow" />
-
-                <Label Text="Risque neige : " />
-                <Label x:Name="RisqueNeigeNow" />
-
-                <Label Text="____________________________________" />
-
-
-                <Label Text="Météo du jour (+6h)" Font="Bold,20" />
-
-                <Label Text="Température :" />
-                <Label x:Name="TemperatureH6" />
-
-                <Label Text="Créneau +6h :" />
-                <Label x:Name="PressionH6" />
-
-                <Label Text="Météo du jour (+12h)" Font="Bold,20" />
-
-                <Label Text="Température :" />
-                <Label x:Name="TemperatureH12" />
-
-                <Label Text="Créneau +12h :" />
-                <Label x:Name="PressionH12" />
-
-           -->
-        
-            
-                
-            
 
     </ContentPage.Content>
 </ContentPage>
