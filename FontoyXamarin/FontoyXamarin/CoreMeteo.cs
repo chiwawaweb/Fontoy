@@ -7,33 +7,20 @@ namespace FontoyXamarin
 {
     public class CoreMeteo
     {
-        public static async Task<Meteo> GetMeteo(DateTime dateMeteo)
+        public static async Task<Meteo> GetMeteo()
         {
-            /* Calcul du créneau */
-            string creneauMeteoNow = CalculCreneau(dateMeteo.ToShortDateString(), dateMeteo.ToLongTimeString());
-            string creneauMeteoH6 = CalculCreneau(dateMeteo.AddHours(6).ToShortDateString(), dateMeteo.AddHours(6).ToLongTimeString());
-            string creneauMeteoH12 = CalculCreneau(dateMeteo.AddHours(12).ToShortDateString(), dateMeteo.AddHours(12).ToLongTimeString());
-
-            string latitude = "49.3559";
-            string longitude = "5.99638";
-            string auth = "BR9RRgR6V3UFKFptUCYHLlkxVGEOeAgvC3dXNABlVyoAa1IzAGABZ1A%2BUC1XeFdhUH0AYwkyAzMHbFIqDnxUNQVvUT0Eb1cwBWpaP1B%2FByxZd1Q1Di4ILwtpVzkAblcqAGpSNwB9AWBQOVAsV2VXYVBrAH8JKQM6B2FSNw5lVD4FblE1BG5XMQVoWidQfwc2WThUNA4yCGULaVc0ADhXNQBqUj4AawFlUD9QLFdvV2BQYwBiCTIDMgdnUjQOfFQoBR9RRgR6V3UFKFptUCYHLlk%2FVGoOZQ%3D%3D";
-            //string queryString = "http://www.infoclimat.fr/public-api/gfs/json?_ll="
-              //  + latitude+","+longitude+"&_auth="
-              //  + auth + "&_c=00e0a65f995e0f9afe937cba34c8c6f3";
-
             string queryString = "https://www.prevision-meteo.ch/services/json/fontoy";
-
-            Console.WriteLine("===xx====xx====xx=====");
 
             dynamic results = await DataService.getDataFromService(queryString).ConfigureAwait(false);
 
-            Console.WriteLine("****** " + (string)results["city_info"]["name"]);
 
             if ((string)results["city_info"]["name"]=="Fontoy")
             {
                 Meteo meteo = new Meteo();
 
                 /* Récupération des données JSON */
+                int temperature = (int)results["current_condition"]["tmp"];
+
                 Console.WriteLine((string)results["current_condition"]["condition_key"]);
                 /*
                 int jsonPressionNow = (int)results[creneauMeteoNow]["pression"]["niveau_de_la_mer"];
@@ -44,6 +31,11 @@ namespace FontoyXamarin
                 */
 
                 /* Conversion des données */
+
+
+                /* Envoi des données */
+                meteo.TemperatureNow = temperature + " °C";
+
 
                 /* Meteo Now */
                 /*int pressionNow = jsonPressionNow / 100;

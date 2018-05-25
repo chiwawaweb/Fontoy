@@ -24,10 +24,10 @@ namespace FontoyXamarin.Views
         private async void ViewMeteo()
         {
             
-            Meteo meteo = await CoreMeteo.GetMeteo(DateTime.Now);
-            /*
-            TemperatureNow.Text = meteo.TemperatureNow;
+            Meteo meteo = await CoreMeteo.GetMeteo();
             
+            TemperatureNow.Text = meteo.TemperatureNow;
+            /*
             PressionNow.Text = meteo.PressionNow;
             VentMoyenVitesseNow.Text = meteo.VentMoyenVitesseNow;
             VentRafalesVitesseNow.Text = meteo.VentRafalesVitesseNow;
