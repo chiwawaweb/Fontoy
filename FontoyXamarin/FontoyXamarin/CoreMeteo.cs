@@ -38,8 +38,8 @@ namespace FontoyXamarin
                 /* Envoi des données */
                 meteo.Temperature = temperature + " °C";
                 meteo.VentDirectionImage = ventDirectionImage;
-                meteo.VentVitesseMoyenne = ventVitesseMoyenne + " km/h";
-                meteo.VentVitesseRafales = ventVitesseRafales + " km/h";
+                meteo.VentVitesseMoyenne = "Vent moyen : " + ventVitesseMoyenne + " km/h";
+                meteo.VentVitesseRafales = "Rafales : " + ventVitesseRafales + " km/h";
                 meteo.Humidite = humidite + " %";
                 meteo.Pression = pression + " hPa";
                 meteo.Conditions = conditions;
