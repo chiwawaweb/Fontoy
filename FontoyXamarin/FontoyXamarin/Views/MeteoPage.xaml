@@ -47,8 +47,8 @@
                         <RowDefinition Height="60*" />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="0.6*" />
-                        <ColumnDefinition Width="0.4*" />
+                        <ColumnDefinition Width="0.5*" />
+                        <ColumnDefinition Width="0.5*" />
                     </Grid.ColumnDefinitions>
                     
                     <!-- Direction du vent -->

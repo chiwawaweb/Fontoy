@@ -30,6 +30,8 @@ namespace FontoyXamarin.Views
             VentDirectionImage.Source = meteo.VentDirectionImage;
             VentVitesseMoyenne.Text = meteo.VentVitesseMoyenne;
             VentVitesseRafales.Text = meteo.VentVitesseRafales;
+            Humidite.Text = meteo.Humidite;
+            Pression.Text = meteo.Pression;
             ConditionsImage.Source = meteo.ConditionsImage;
 
             //Console.WriteLine(meteo.ConditionsImage); // tmp test

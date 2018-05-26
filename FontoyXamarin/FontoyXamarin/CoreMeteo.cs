@@ -21,6 +21,8 @@ namespace FontoyXamarin
                 int temperature = (int)results["current_condition"]["tmp"];
                 int ventVitesseMoyenne = (int)results["current_condition"]["wnd_spd"];
                 int ventVitesseRafales = (int)results["current_condition"]["wnd_gust"];
+                int humidite = (int)results["current_condition"]["humidity"];
+                double pression = (double)results["current_condition"]["pressure"];
                 string ventDirection = (string)results["current_condition"]["wnd_dir"];
                 string conditions = (string)results["current_condition"]["condition_key"];
 
@@ -33,6 +35,8 @@ namespace FontoyXamarin
                 meteo.VentDirectionImage = ventDirectionImage;
                 meteo.VentVitesseMoyenne = ventVitesseMoyenne + " km/h";
                 meteo.VentVitesseRafales = ventVitesseRafales + " km/h";
+                meteo.Humidite = humidite + " %";
+                meteo.Pression = pression + " hPa";
                 meteo.ConditionsImage = conditionsImage;
 
                 return meteo;
