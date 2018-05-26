@@ -42,9 +42,9 @@
                         <RowDefinition Height="20*" />
                         <RowDefinition Height="05*" />
                         <RowDefinition Height="05*" />
+                        <RowDefinition Height="05*" />
+                        <RowDefinition Height="05*" />
                         <RowDefinition Height="60*" />
-                        <RowDefinition Height="05*" />
-                        <RowDefinition Height="05*" />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0.6*" />
@@ -57,7 +57,7 @@
                         Grid.Column="0"
                         Grid.ColumnSpan="2"
                         HorizontalOptions="FillAndExpand"
-                        x:Name="VentDirection">
+                        x:Name="VentDirectionImage">
                     </Image>
                     
                     <!-- Vitesse vent moyen -->
@@ -91,28 +91,28 @@
                         FontAttributes="Bold"
                         HorizontalTextAlignment="End" />
                     <Label
-                        Grid.Row="4"
+                        Grid.Row="3"
                         Grid.Column="0"
                         Text="Humidité :"
                         FontSize="12"
                         HorizontalTextAlignment="End" />
                     <Label
-                        Grid.Row="4"
+                        Grid.Row="3"
                         Grid.Column="1"
-                        x:Name="HumiditeNow"
+                        x:Name="Humidite"
                         FontSize="12"
                         FontAttributes="Bold"
                         HorizontalTextAlignment="End" />
                     <Label
-                        Grid.Row="5"
+                        Grid.Row="4"
                         Grid.Column="0"
                         Text="Pression :"
                         FontSize="12"
                         HorizontalTextAlignment="End" />
                     <Label
-                        Grid.Row="5"
+                        Grid.Row="4"
                         Grid.Column="1"
-                        x:Name="PressionNow"
+                        x:Name="Pression"
                         FontSize="12"
                         FontAttributes="Bold"
                         HorizontalTextAlignment="End" />

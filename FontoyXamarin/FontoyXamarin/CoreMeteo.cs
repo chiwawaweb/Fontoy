@@ -26,9 +26,11 @@ namespace FontoyXamarin
 
                 /* Conversion des données */
                 string conditionsImage = "meteo_" + conditions.Replace("-","_") + "_big";
+                string ventDirectionImage = "meteo_vent_" + ventDirection.ToLower();
 
                 /* Envoi des données */
                 meteo.Temperature = temperature + " °C";
+                meteo.VentDirectionImage = ventDirectionImage;
                 meteo.VentVitesseMoyenne = ventVitesseMoyenne + " km/h";
                 meteo.VentVitesseRafales = ventVitesseRafales + " km/h";
                 meteo.ConditionsImage = conditionsImage;

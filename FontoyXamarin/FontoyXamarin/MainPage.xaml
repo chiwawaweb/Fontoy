@@ -80,7 +80,7 @@
                         Grid.Row="0"
                         Grid.Column="1"
                         HasShadow="True"
-                        CornerRadius="5"
+                        CornerRadius="2"
                         OutlineColor="#FFCC00"
                         BackgroundColor="#FFCC00"
                         HorizontalOptions="FillAndExpand"
@@ -102,7 +102,7 @@
                         Grid.Row="0"
                         Grid.Column="2"
                         HasShadow="True"
-                        CornerRadius="5"
+                        CornerRadius="2"
                         OutlineColor="#cc0000"
                         BackgroundColor="#cc0000"
                         HorizontalOptions="FillAndExpand"
@@ -125,7 +125,7 @@
                         Grid.Row="1"
                         Grid.Column="0"
                         HasShadow="True"
-                        CornerRadius="5"
+                        CornerRadius="2"
                         OutlineColor="#339933"
                         BackgroundColor="#339933"
                         HorizontalOptions="FillAndExpand"
@@ -147,7 +147,7 @@
                         Grid.Row="1"
                         Grid.Column="1"
                         HasShadow="True"
-                        CornerRadius="5"
+                        CornerRadius="2"
                         OutlineColor="#ff99cc"
                         BackgroundColor="#ff99cc"
                         HorizontalOptions="FillAndExpand"
@@ -169,7 +169,7 @@
                         Grid.Row="1"
                         Grid.Column="2"
                         HasShadow="True"
-                        CornerRadius="5"
+                        CornerRadius="2"
                         OutlineColor="#7B0099"
                         BackgroundColor="#7B0099"
                         HorizontalOptions="FillAndExpand"
@@ -192,7 +192,7 @@
                         Grid.Row="2"
                         Grid.Column="0"
                         HasShadow="True"
-                        CornerRadius="5"
+                        CornerRadius="2"
                         OutlineColor="#ff6600"
                         BackgroundColor="#ff6600"
                         HorizontalOptions="FillAndExpand"
@@ -214,12 +214,13 @@
                         Grid.Row="2"
                         Grid.Column="1"
                         HasShadow="True"
-                        CornerRadius="5"
+                        CornerRadius="2"
                         OutlineColor="#0099ff"
                         BackgroundColor="#0099ff"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
-                        Margin="0">
+                        Margin="0"
+                        Padding="0">
                         <Image Source="iconSignalement"
                             HorizontalOptions="Center" >
                             <Image.GestureRecognizers>
@@ -235,12 +236,13 @@
                         Grid.Row="2"
                         Grid.Column="2"
                         HasShadow="True"
-                        CornerRadius="5"
+                        CornerRadius="2"
                         OutlineColor="#ccccff"
                         BackgroundColor="#ccccff"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
-                        Margin="0">
+                        Margin="0"
+                        Padding="0">
                         <Image Source="iconAgenda"
                             HorizontalOptions="Center" >
                             <Image.GestureRecognizers>
@@ -257,12 +259,13 @@
                         Grid.Row="3"
                         Grid.Column="0"
                         HasShadow="True"
-                        CornerRadius="5"
+                        CornerRadius="2"
                         OutlineColor="#cc99ff"
                         BackgroundColor="#cc99ff"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
-                        Margin="0">
+                        Margin="0"
+                        Padding="0">
                         <Image Source="iconAgenda"
                             HorizontalOptions="Center" >
                             <Image.GestureRecognizers>
@@ -278,12 +281,13 @@
                         Grid.Row="3"
                         Grid.Column="1"
                         HasShadow="True"
-                        CornerRadius="5"
+                        CornerRadius="2"
                         OutlineColor="#cc66ff"
                         BackgroundColor="#cc66ff"
                         HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand"
-                        Margin="0">
+                        Margin="0"
+                        Padding="0">
                         <Image Source="iconAgenda"
                             HorizontalOptions="Center" >
                             <Image.GestureRecognizers>
@@ -299,7 +303,7 @@
                         Grid.Row="3"
                         Grid.Column="2"
                         HasShadow="True"
-                        CornerRadius="5"
+                        CornerRadius="2"
                         OutlineColor="#3b5998"
                         BackgroundColor="#3b5998"
                         HorizontalOptions="FillAndExpand"

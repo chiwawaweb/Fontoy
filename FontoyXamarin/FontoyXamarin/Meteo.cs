@@ -13,6 +13,7 @@ namespace FontoyXamarin
         public string VentDirection { get; set; } = " ";
         public string Humidite { get; set; } = " ";
         public string ConditionsImage { get; set; } = " ";
+        public string VentDirectionImage { get; set; } = " ";
 
 
         public string TemperatureH6 { get; set; } = " ";
