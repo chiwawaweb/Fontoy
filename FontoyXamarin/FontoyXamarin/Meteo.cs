@@ -12,24 +12,13 @@ namespace FontoyXamarin
         public string VentVitesseRafales { get; set; } = " ";
         public string VentDirection { get; set; } = " ";
         public string Humidite { get; set; } = " ";
+        public string Conditions { get; set; } = " ";
         public string ConditionsImage { get; set; } = " ";
         public string VentDirectionImage { get; set; } = " ";
+        public string LeverSoleil { get; set; } = " ";
+        public string CoucherSoleil { get; set; } = " ";
 
 
-        public string TemperatureH6 { get; set; } = " ";
-        public string PressionH6 { get; set; } = " ";
-        public string PluieH6 { get; set; } = " ";
-        public string VentVitesseH6 { get; set; } = " ";
-        public string VentDirectionH6 { get; set; } = " ";
-        public string NebulositeH6 { get; set; } = " ";
-        public string RisqueNeigeH6 { get; set; } = " ";
-
-        public string TemperatureH12 { get; set; } = " ";
-        public string PressionH12 { get; set; } = " ";
-        public string PluieH12 { get; set; } = " ";
-        public string VentVitesseH12 { get; set; } = " ";
-        public string VentDirectionH12 { get; set; } = " ";
-        public string NebulositeH12 { get; set; } = " ";
-        public string RisqueNeigeH12 { get; set; } = " ";
+        
     }
 }
