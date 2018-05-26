@@ -25,17 +25,20 @@ namespace FontoyXamarin.Views
         {
             
             Meteo meteo = await CoreMeteo.GetMeteo();
-            
+
             Temperature.Text = meteo.Temperature;
+            /*
             VentDirectionImage.Source = meteo.VentDirectionImage;
             VentVitesseMoyenne.Text = meteo.VentVitesseMoyenne;
             VentVitesseRafales.Text = meteo.VentVitesseRafales;
             Humidite.Text = meteo.Humidite;
             Pression.Text = meteo.Pression;
+            */
+            Conditions.Text = meteo.Conditions;
             ConditionsImage.Source = meteo.ConditionsImage;
-
-            //Console.WriteLine(meteo.ConditionsImage); // tmp test
-
+            HoraireLeverSoleil.Text = meteo.LeverSoleil;
+            HoraireCoucherSoleil.Text = meteo.CoucherSoleil;
+            
         }
 	}
 }

@@ -14,6 +14,109 @@
             </Grid.ColumnDefinitions>
 
             <Grid Margin="0"
+                  RowSpacing="0"
+                  Grid.Row="0"
+                  Grid.Column="0"
+                  Grid.ColumnSpan="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25*" />
+                    <RowDefinition Height="42*" />
+                    <RowDefinition Height="08*" />
+                    <RowDefinition Height="15*" />
+                    <RowDefinition Height="10*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*" />
+                    <ColumnDefinition Width="50*" />
+                </Grid.ColumnDefinitions>
+
+                <Frame
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    BackgroundColor="Red" />
+
+                <Image
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    HorizontalOptions="FillAndExpand"
+                    x:Name="ConditionsImage">
+                </Image>
+
+                <Label
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    FontSize="15"
+                    HorizontalTextAlignment="Center"
+                    x:Name="Conditions" />
+                <Label
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    FontSize="40"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"
+                    x:Name="Temperature" />
+
+                <Grid Margin="0"
+                      Grid.Row="4"
+                      Grid.Column="0"
+                      RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*" />
+                        <ColumnDefinition Width="50*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    HorizontalOptions="FillAndExpand"
+                    Source="meteo_lever_soleil"/>
+                    
+                    <Label Grid.Row="0"
+                       Grid.Column="1"
+                       FontSize="18"
+                       VerticalTextAlignment="Center"
+                       x:Name="HoraireLeverSoleil"/>
+
+                </Grid>
+
+                <Grid Margin="0"
+                      Grid.Row="4"
+                      Grid.Column="1"
+                      RowSpacing="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*" />
+                        <ColumnDefinition Width="50*" />
+                    </Grid.ColumnDefinitions>
+                    <Image
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    HorizontalOptions="FillAndExpand"
+                    Source="meteo_coucher_soleil"/>
+
+                    <Label Grid.Row="0"
+                       Grid.Column="1"
+                       FontSize="18"
+                       VerticalTextAlignment="Center"
+                       x:Name="HoraireCoucherSoleil"/>
+                </Grid>
+
+
+
+
+            </Grid>
+            
+            
+            
+            <!--<Grid Margin="0"
                   Grid.Row="0"
                   Grid.Column="0"
                   Grid.ColumnSpan="2">
@@ -51,7 +154,6 @@
                         <ColumnDefinition Width="0.5*" />
                     </Grid.ColumnDefinitions>
                     
-                    <!-- Direction du vent -->
                     <Image
                         Grid.Row="0"
                         Grid.Column="0"
@@ -60,7 +162,6 @@
                         x:Name="VentDirectionImage">
                     </Image>
                     
-                    <!-- Vitesse vent moyen -->
                     <Label Margin="0"
                         Grid.Row="1"
                         Grid.Column="0"
@@ -76,7 +177,6 @@
                         FontAttributes="Bold"
                         HorizontalTextAlignment="End" />
                     
-                    <!-- Vitesse vent rafales -->
                     <Label
                         Grid.Row="2"
                         Grid.Column="0"
@@ -120,7 +220,6 @@
 
                 </Grid>
                 
-                <!-- Température -->
                 <Label Grid.Row="1"
                     Grid.Column="0"
                     x:Name="Temperature"
@@ -129,7 +228,7 @@
                     FontAttributes="Bold"
                     VerticalTextAlignment="Center"
                     HorizontalTextAlignment="Start" />
-            </Grid>
+            </Grid>-->
 
             <Frame 
                 Grid.Row="1"

@@ -42,7 +42,10 @@ namespace FontoyXamarin
                 meteo.VentVitesseRafales = ventVitesseRafales + " km/h";
                 meteo.Humidite = humidite + " %";
                 meteo.Pression = pression + " hPa";
+                meteo.Conditions = conditions;
                 meteo.ConditionsImage = conditionsImage;
+                meteo.LeverSoleil = horaireLeverSoleil;
+                meteo.CoucherSoleil = horaireCoucherSoleil;
 
                 return meteo;
             }
