@@ -17,6 +17,7 @@ namespace FontoyXamarin
             {
                 Meteo meteo = new Meteo();
 
+                /* Case B : conditions actuelles */
                 /* Récupération des données JSON */
                 int temperature = (int)results["current_condition"]["tmp"];
                 int ventVitesseMoyenne = (int)results["current_condition"]["wnd_spd"];
@@ -40,14 +41,30 @@ namespace FontoyXamarin
                 meteo.VentDirectionImage = ventDirectionImage;
                 meteo.VentVitesseMoyenne = "Vent moyen : " + ventVitesseMoyenne + " km/h";
                 meteo.VentVitesseRafales = "Rafales : " + ventVitesseRafales + " km/h";
-                meteo.Humidite = humidite + " %";
-                meteo.Pression = pression + " hPa";
+                meteo.Humidite = "Humidité : " + humidite + " %";
+                meteo.Pression = "Pression : " + pression + " hPa";
                 meteo.Conditions = conditions;
                 meteo.ConditionsImage = conditionsImage;
                 meteo.LeverSoleil = horaireLeverSoleil;
                 meteo.CoucherSoleil = horaireCoucherSoleil;
 
+                /* Case B : Détermine le type d'info */
+
+                /*
+                 * A : Entre 6h et 18h 
+                 * B : soir 20h
+                 * C : nuit 3h
+                 * 
+                 * A : Entre 18h et 24h
+                 * B : nuit 3h
+                 * C : lendemain journée
+                 * 
+                 * A : Entre 0h et 6h
+                 * B : matin 8h
+                 * C : après-midi 14h
+                 */
                 return meteo;
+                
             }
             
             else

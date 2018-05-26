@@ -20,8 +20,8 @@
                   Grid.ColumnSpan="2">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="12*" />
-                    <RowDefinition Height="52*" />
-                    <RowDefinition Height="08*" />
+                    <RowDefinition Height="54*" />
+                    <RowDefinition Height="06*" />
                     <RowDefinition Height="15*" />
                     <RowDefinition Height="10*" />
                 </Grid.RowDefinitions>
@@ -64,21 +64,41 @@
                         <Label Grid.Row="0"
                                Grid.Column="1"
                                FontSize="12"
+                               FontFamily="sans-serif-light"
                                x:Name="VentVitesseMoyenne"/>
                         <Label Grid.Row="1"
                                Grid.Column="1"
                                FontSize="12"
+                               FontFamily="sans-serif-light"
                                x:Name="VentVitesseRafales"/>
-
-
                     </Grid>
-                    
 
+                    <Grid Margin="0"
+                          RowSpacing="0"
+                          Grid.Row="0"
+                          Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50*" />
+                            <RowDefinition Height="50*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="0"
+                               Grid.Column="0"
+                               FontSize="12"
+                               FontFamily="sans-serif-light"
+                               HorizontalTextAlignment="End"
+                               x:Name="Humidite" />
+                        <Label Grid.Row="1"
+                               Grid.Column="0"
+                               FontSize="12"
+                               FontFamily="sans-serif-light"
+                               HorizontalTextAlignment="End"
+                               x:Name="Pression" />
+                    </Grid>
                 </Grid>
-
-
-
-                
 
                 <Image
                     Grid.Row="1"
@@ -93,14 +113,17 @@
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     FontSize="15"
+                    FontFamily="sans-serif-light"
                     HorizontalTextAlignment="Center"
                     x:Name="Conditions" />
                 <Label
                     Grid.Row="3"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
-                    FontSize="40"
-                    FontAttributes="Bold"
+                    FontSize="45"
+                    FontFamily="sans-serif-light"
+                    FontAttributes="None"
+                    VerticalTextAlignment="Center"
                     HorizontalTextAlignment="Center"
                     x:Name="Temperature" />
 
@@ -125,6 +148,7 @@
                     <Label Grid.Row="0"
                        Grid.Column="1"
                        FontSize="15"
+                       FontFamily="sans-serif-light"
                        VerticalTextAlignment="Center"
                        x:Name="HoraireLeverSoleil"/>
 
@@ -150,130 +174,11 @@
                     <Label Grid.Row="0"
                        Grid.Column="1"
                        FontSize="15"
+                       FontFamily="sans-serif-light"
                        VerticalTextAlignment="Center"
                        x:Name="HoraireCoucherSoleil"/>
                 </Grid>
-
-
-
-
             </Grid>
-            
-            
-            
-            <!--<Grid Margin="0"
-                  Grid.Row="0"
-                  Grid.Column="0"
-                  Grid.ColumnSpan="2">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="0.75*" />
-                    <RowDefinition Height="0.25*" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.6*" />
-                    <ColumnDefinition Width="0.4*" />
-                </Grid.ColumnDefinitions>
-
-                <Image
-                    Grid.Row="0"
-                    Grid.Column="0"
-                    HorizontalOptions="FillAndExpand"
-                    x:Name="ConditionsImage">
-                    
-                </Image>
-                
-                <Grid ColumnSpacing="0" RowSpacing="0"
-                      Grid.Row="0"
-                      Grid.Column="1"
-                      Grid.RowSpan="2">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="20*" />
-                        <RowDefinition Height="05*" />
-                        <RowDefinition Height="05*" />
-                        <RowDefinition Height="05*" />
-                        <RowDefinition Height="05*" />
-                        <RowDefinition Height="60*" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="0.5*" />
-                        <ColumnDefinition Width="0.5*" />
-                    </Grid.ColumnDefinitions>
-                    
-                    <Image
-                        Grid.Row="0"
-                        Grid.Column="0"
-                        Grid.ColumnSpan="2"
-                        HorizontalOptions="FillAndExpand"
-                        x:Name="VentDirectionImage">
-                    </Image>
-                    
-                    <Label Margin="0"
-                        Grid.Row="1"
-                        Grid.Column="0"
-                        Text="Moyen :"
-                        FontSize="12"
-                        HorizontalTextAlignment="End" />
-                    <Label
-                        Margin="0"
-                        Grid.Row="1"
-                        Grid.Column="1"
-                        x:Name="VentVitesseMoyenne"
-                        FontSize="12"
-                        FontAttributes="Bold"
-                        HorizontalTextAlignment="End" />
-                    
-                    <Label
-                        Grid.Row="2"
-                        Grid.Column="0"
-                        Text="Rafales :"
-                        FontSize="12"
-                        HorizontalTextAlignment="End" />
-                    <Label
-                        Grid.Row="2"
-                        Grid.Column="1"
-                        x:Name="VentVitesseRafales"
-                        FontSize="12"
-                        FontAttributes="Bold"
-                        HorizontalTextAlignment="End" />
-                    <Label
-                        Grid.Row="3"
-                        Grid.Column="0"
-                        Text="Humidité :"
-                        FontSize="12"
-                        HorizontalTextAlignment="End" />
-                    <Label
-                        Grid.Row="3"
-                        Grid.Column="1"
-                        x:Name="Humidite"
-                        FontSize="12"
-                        FontAttributes="Bold"
-                        HorizontalTextAlignment="End" />
-                    <Label
-                        Grid.Row="4"
-                        Grid.Column="0"
-                        Text="Pression :"
-                        FontSize="12"
-                        HorizontalTextAlignment="End" />
-                    <Label
-                        Grid.Row="4"
-                        Grid.Column="1"
-                        x:Name="Pression"
-                        FontSize="12"
-                        FontAttributes="Bold"
-                        HorizontalTextAlignment="End" />
-
-
-                </Grid>
-                
-                <Label Grid.Row="1"
-                    Grid.Column="0"
-                    x:Name="Temperature"
-                    FontSize="50"
-                       FontFamily="Tahoma"
-                    FontAttributes="Bold"
-                    VerticalTextAlignment="Center"
-                    HorizontalTextAlignment="Start" />
-            </Grid>-->
 
             <Frame 
                 Grid.Row="1"
