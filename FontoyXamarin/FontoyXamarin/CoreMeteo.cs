@@ -23,7 +23,7 @@ namespace FontoyXamarin
                 int ventVitesseMoyenne = (int)results["current_condition"]["wnd_spd"];
                 int ventVitesseRafales = (int)results["current_condition"]["wnd_gust"];
                 int humidite = (int)results["current_condition"]["humidity"];
-                double pression = (double)results["current_condition"]["pressure"];
+                int pression = (int)results["current_condition"]["pressure"];
                 string ventDirection = (string)results["current_condition"]["wnd_dir"];
                 string conditionsKey = (string)results["current_condition"]["condition_key"];
                 string conditions = (string)results["current_condition"]["condition"];

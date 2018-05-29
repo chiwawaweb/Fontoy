@@ -1,8 +1,18 @@
-﻿using System;
+﻿using Android;
+using Android.App;
+using Android.Content;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
+using Android.OS;
+using Android.Graphics;
+using Android.Media;
+using System.Threading;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -10,7 +20,9 @@ using Xamarin.Forms.Xaml;
 namespace FontoyXamarin.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MeteoPage : ContentPage
+    [Activity(Label = "Notifications Lab", MainLauncher = true, Icon = "@drawable/icon", Theme = "@android:style/Theme.Material")]
+
+    public partial class MeteoPage : ContentPage
 	{
         public MeteoPage ()
 		{
@@ -36,6 +48,7 @@ namespace FontoyXamarin.Views
             ConditionsImage.Source = meteo.ConditionsImage;
             HoraireLeverSoleil.Text = meteo.LeverSoleil;
             HoraireCoucherSoleil.Text = meteo.CoucherSoleil;
+
         }
 	}
 }

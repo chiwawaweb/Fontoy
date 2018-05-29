@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:FontoyXamarin"
-             BackgroundColor="AliceBlue"
+             BackgroundColor="#ffffff"
              x:Class="FontoyXamarin.MainPage">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Menu" Clicked="OnMenuClic">
@@ -277,26 +277,16 @@
                     </Frame>
 
                     <!--  -->
-                    <Frame 
+                    <!--  -->
+                    <Button
                         Grid.Row="3"
                         Grid.Column="1"
-                        HasShadow="True"
-                        CornerRadius="2"
-                        OutlineColor="#cc66ff"
-                        BackgroundColor="#cc66ff"
                         HorizontalOptions="FillAndExpand"
-                        VerticalOptions="FillAndExpand"
-                        Margin="0"
-                        Padding="0">
-                        <Image Source="iconAgenda"
-                            HorizontalOptions="Center" >
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer
-                                Tapped="OnActualiteClic"
-                                NumberOfTapsRequired="1" />
-                            </Image.GestureRecognizers>
-                        </Image>
-                    </Frame>
+                        Image="iconAgenda"
+                        HeightRequest="56"
+                        BackgroundColor="Red">
+                    </Button>
+                    
 
                     <!--  -->
                     <Frame 
